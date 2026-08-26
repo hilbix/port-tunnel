@@ -1,0 +1,1631 @@
+[
+  {
+    "_1": 2,
+    "_3": -5,
+    "_4": -5
+  },
+  "loaderData",
+  {
+    "_5": 6,
+    "_7": 8
+  },
+  "actionData",
+  "errors",
+  "root",
+  {
+    "_581": 582,
+    "_583": 66,
+    "_584": 18,
+    "_585": 18,
+    "_586": 18,
+    "_587": 66,
+    "_588": 18,
+    "_589": 18,
+    "_590": 18,
+    "_591": 18,
+    "_592": -5,
+    "_593": 594
+  },
+  "routes/s.$postId",
+  {
+    "_9": 10,
+    "_11": 12,
+    "_13": -7,
+    "_14": -7,
+    "_15": 16,
+    "_17": 18,
+    "_19": 18,
+    "_20": -5,
+    "_21": 22
+  },
+  "kind",
+  "post_with_profile",
+  "postWithProfile",
+  {
+    "_23": 24,
+    "_25": 26
+  },
+  "messagingRoomId",
+  "referrer",
+  "imagegenOgImagePolicy",
+  "current_wide",
+  "preferIntrinsicAspectRatioForOgImage",
+  false,
+  "enforceRenderedOgImg",
+  "ogImageVariantOverride",
+  "defaultOgDescription",
+  "ChatGPT helps you get answers, find inspiration, and be more productive.",
+  "post",
+  {
+    "_45": 46,
+    "_47": 48,
+    "_49": 50,
+    "_51": 52,
+    "_53": 54,
+    "_55": 56,
+    "_57": 58,
+    "_59": 60,
+    "_38": 61,
+    "_62": 63,
+    "_64": 18
+  },
+  "profile",
+  {
+    "_27": 28,
+    "_29": 28,
+    "_30": 31,
+    "_32": -5,
+    "_33": -5,
+    "_34": 35,
+    "_36": 18,
+    "_37": -5,
+    "_38": -5,
+    "_39": -5,
+    "_40": 18,
+    "_41": -5,
+    "_42": -5,
+    "_43": -5,
+    "_44": 18
+  },
+  "user_id",
+  "anonymous",
+  "username",
+  "profile_picture_url",
+  "https://cdn.openai.com/sora/images/profile_placeholder_v4.png",
+  "profile_picture_id",
+  "is_default_profile_picture",
+  "follower_count",
+  0,
+  "is_following",
+  "display_name",
+  "permalink",
+  "can_cameo",
+  "verified",
+  "character_count",
+  "owner_profile",
+  "social_context",
+  "follows_you",
+  "id",
+  "t_6a8da87879948191aa256c4b354a2bc1",
+  "posted_at",
+  1787668600.475053,
+  "text",
+  "danke, mit --log-level=debug kann ich erkenne...",
+  "og_title",
+  "Schau dir diesen Chat an",
+  "og_description",
+  "Jemand dachte, dieser Chat wäre was für dich.",
+  "og_image_variant",
+  "control",
+  "attachments",
+  [
+    72
+  ],
+  "preview_image_url",
+  "https://ogimg.chatgpt.com/?postId=t_6a8da87879948191aa256c4b354a2bc1",
+  "https://chatgpt.com/s/t_6a8da87879948191aa256c4b354a2bc1",
+  "permissions",
+  {
+    "_65": 66,
+    "_67": 18,
+    "_68": 18,
+    "_69": 66,
+    "_70": 71
+  },
+  "use_experimental_unfurl",
+  "can_read",
+  true,
+  "can_write",
+  "can_delete",
+  "can_remix",
+  "share_setting",
+  "public",
+  {
+    "_45": 73,
+    "_74": 75,
+    "_9": 76,
+    "_77": 78,
+    "_79": -5,
+    "_80": 76,
+    "_81": -5,
+    "_82": -5
+  },
+  "t_6a8da87879948191aa256c4b354a2bc1-attachment-0",
+  "tags",
+  [],
+  "message_slice",
+  "messages",
+  [
+    83
+  ],
+  "group_chat_id",
+  "source_attachment_type",
+  "widget_name",
+  "highlight",
+  {
+    "_45": 84,
+    "_85": 86,
+    "_87": 88,
+    "_89": 90,
+    "_91": 92,
+    "_93": 94,
+    "_95": 66,
+    "_96": 97,
+    "_98": 99,
+    "_100": 101,
+    "_102": 103
+  },
+  "d417e743-4bc2-4c33-8dda-6333c4569415",
+  "author",
+  {
+    "_575": 576,
+    "_577": -5,
+    "_98": 578
+  },
+  "create_time",
+  1787668403.056118,
+  "update_time",
+  1787668440.357694,
+  "content",
+  {
+    "_571": 49,
+    "_572": 573
+  },
+  "status",
+  "finished_successfully",
+  "end_turn",
+  "weight",
+  1,
+  "metadata",
+  {
+    "_104": 105,
+    "_106": 66,
+    "_107": 108,
+    "_109": 110,
+    "_111": 112,
+    "_113": 114,
+    "_115": 116,
+    "_117": 118,
+    "_119": 120,
+    "_121": 122,
+    "_123": 124,
+    "_125": 126,
+    "_127": 128,
+    "_129": 128,
+    "_130": 118,
+    "_131": 132,
+    "_133": 66,
+    "_134": 135
+  },
+  "recipient",
+  "all",
+  "channel",
+  "final",
+  "finish_details",
+  {
+    "_229": 567,
+    "_568": 569
+  },
+  "is_complete",
+  "content_references",
+  [
+    473,
+    474,
+    475,
+    476,
+    477
+  ],
+  "search_result_groups",
+  [
+    227,
+    228
+  ],
+  "safe_urls",
+  [
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226
+  ],
+  "story_events",
+  [],
+  "citations",
+  [],
+  "resolved_model_slug",
+  "gpt-5-6",
+  "code_blocks",
+  {
+    "_136": 137,
+    "_138": 139,
+    "_140": 141,
+    "_142": 143,
+    "_144": 145,
+    "_146": 147,
+    "_148": 149,
+    "_150": 151,
+    "_152": 153,
+    "_154": 155,
+    "_156": 157,
+    "_158": 159,
+    "_160": 161,
+    "_162": 163,
+    "_164": 165,
+    "_166": 167,
+    "_168": 169,
+    "_170": 171,
+    "_172": 173,
+    "_174": 175,
+    "_176": 177,
+    "_178": 179,
+    "_180": 181,
+    "_182": 183,
+    "_184": 185,
+    "_186": 187
+  },
+  "cot_version",
+  "v5",
+  "request_id",
+  "41866202-765e-4696-804c-ff3dc2490290",
+  "message_type",
+  "next",
+  "turn_exchange_id",
+  "6c90f5c9-616b-4c12-ac52-e8714014c93d",
+  "working_turn_id",
+  "model_slug",
+  "default_model_slug",
+  "auto",
+  "can_save",
+  "parent_id",
+  "c55e8ce5-74db-4b65-8abe-feef5617e380",
+  "0",
+  {
+    "_45": 216,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "1",
+  {
+    "_45": 215,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "2",
+  {
+    "_45": 214,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "3",
+  {
+    "_45": 213,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "4",
+  {
+    "_45": 212,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "5",
+  {
+    "_45": 211,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "6",
+  {
+    "_45": 210,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "7",
+  {
+    "_45": 209,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "8",
+  {
+    "_45": 208,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "9",
+  {
+    "_45": 207,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "10",
+  {
+    "_45": 206,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "11",
+  {
+    "_45": 205,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "12",
+  {
+    "_45": 204,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "13",
+  {
+    "_45": 203,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "14",
+  {
+    "_45": 202,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "15",
+  {
+    "_45": 201,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "16",
+  {
+    "_45": 200,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "17",
+  {
+    "_45": 199,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "18",
+  {
+    "_45": 198,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "19",
+  {
+    "_45": 197,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "20",
+  {
+    "_45": 196,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "21",
+  {
+    "_45": 195,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "22",
+  {
+    "_45": 194,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "23",
+  {
+    "_45": 193,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "24",
+  {
+    "_45": 192,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "25",
+  {
+    "_45": 188,
+    "_189": 18,
+    "_190": 18,
+    "_191": -5
+  },
+  "6684tm",
+  "edited",
+  "previewable",
+  "preview_language",
+  "ljss6z",
+  "rrvm1g",
+  "2y2hyz",
+  "l1z0qk",
+  "ef4zdr",
+  "yz01v2",
+  "dlduad",
+  "6d1ozn",
+  "4xfa9d",
+  "qrwkdr",
+  "ec5td2",
+  "3c3p6d",
+  "qizv0i",
+  "v6lfer",
+  "6uv9pn",
+  "wnpd3j",
+  "st2bv6",
+  "vj3xgb",
+  "mbizk8",
+  "bc1hvf",
+  "oxlrl3",
+  "bwtecc",
+  "7dvouc",
+  "63ifdc",
+  "4dqu34",
+  "https://github.com/hashicorp/yamux",
+  "https://github.com/hashicorp/yamux/blob/master/mux.go",
+  "https://github.com/hashicorp/yamux/blob/master/mux.go?utm_source=chatgpt.com",
+  "https://github.com/hashicorp/yamux/blob/master/session.go",
+  "https://github.com/hashicorp/yamux/blob/master/session.go?utm_source=chatgpt.com",
+  "https://github.com/hashicorp/yamux/releases",
+  "https://github.com/hashicorp/yamux/releases?utm_source=chatgpt.com",
+  "https://github.com/hashicorp/yamux?utm_source=chatgpt.com",
+  "https://pkg.go.dev/go.yaml.in/yaml/v3",
+  "https://pkg.go.dev/go.yaml.in/yaml/v3?utm_source=chatgpt.com",
+  {
+    "_229": 230,
+    "_231": 365,
+    "_233": 366
+  },
+  {
+    "_229": 230,
+    "_231": 232,
+    "_233": 234
+  },
+  "type",
+  "search_result_group",
+  "domain",
+  "go.dev",
+  "entries",
+  [
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252
+  ],
+  {
+    "_229": 253,
+    "_254": 360,
+    "_256": 361,
+    "_258": 362,
+    "_260": 363,
+    "_262": 364,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 354,
+    "_256": 355,
+    "_258": 356,
+    "_260": 357,
+    "_262": 358,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 348,
+    "_256": 349,
+    "_258": 350,
+    "_260": 351,
+    "_262": 352,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 342,
+    "_256": 343,
+    "_258": 344,
+    "_260": 345,
+    "_262": 346,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 339,
+    "_256": 294,
+    "_258": 340,
+    "_260": 341,
+    "_262": 297,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 334,
+    "_256": 335,
+    "_258": 336,
+    "_260": 337,
+    "_262": 338,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 329,
+    "_256": 330,
+    "_258": 331,
+    "_260": 332,
+    "_262": 333,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 323,
+    "_256": 324,
+    "_258": 325,
+    "_260": 326,
+    "_262": 327,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 317,
+    "_256": 318,
+    "_258": 319,
+    "_260": 320,
+    "_262": 321,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 311,
+    "_256": 312,
+    "_258": 313,
+    "_260": 314,
+    "_262": 315,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 305,
+    "_256": 306,
+    "_258": 307,
+    "_260": 308,
+    "_262": 309,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 299,
+    "_256": 300,
+    "_258": 301,
+    "_260": 302,
+    "_262": 303,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 293,
+    "_256": 294,
+    "_258": 295,
+    "_260": 296,
+    "_262": 297,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 287,
+    "_256": 288,
+    "_258": 289,
+    "_260": 290,
+    "_262": 291,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 281,
+    "_256": 282,
+    "_258": 283,
+    "_260": 284,
+    "_262": 285,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 276,
+    "_256": 277,
+    "_258": 272,
+    "_260": 278,
+    "_262": 279,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 270,
+    "_256": 271,
+    "_258": 272,
+    "_260": 273,
+    "_262": 274,
+    "_264": 232
+  },
+  {
+    "_229": 253,
+    "_254": 255,
+    "_256": 257,
+    "_258": 259,
+    "_260": 261,
+    "_262": 263,
+    "_264": 232
+  },
+  "search_result",
+  "url",
+  "https://pkg.go.dev/github.com/weidongkl/go-yaml-migration-tool?utm_source=chatgpt.com",
+  "title",
+  "go-yaml-migration-tool command - github.com/weidongkl/go-yaml-migration-tool - Go Packages",
+  "snippet",
+  "When a project reaches major version v1 it is considered stable.  * Learn more about best practices  REPOSITORY  github.com/weidongkl/go-yaml-migration-tool  LINKS  * Open Source Insights  [Button: J...",
+  "ref_id",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 269
+  },
+  "pub_date",
+  1765324800,
+  "attribution",
+  "turn_index",
+  "ref_type",
+  "search",
+  "ref_index",
+  15,
+  "https://pkg.go.dev/go.yaml.in/yaml/v4?utm_source=chatgpt.com",
+  "yaml package - go.yaml.in/yaml/v4 - Go Packages",
+  "IMAGE README ¶  GO.YAML.IN/YAML  YAML Support for the Go Language  INTRODUCTION  The `yaml` package enables Go programs to comfortably encode and decode YAML values.  It was originally developed withi...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 275
+  },
+  1781654400,
+  13,
+  "https://pkg.go.dev/github.com/itchyny/go-yaml?utm_source=chatgpt.com",
+  "yaml package - github.com/itchyny/go-yaml - Go Packages",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 280
+  },
+  1759622400,
+  11,
+  "https://pkg.go.dev/github.com/helmfile/helmfile/pkg/runtime?utm_source=chatgpt.com",
+  "runtime package - github.com/helmfile/helmfile/pkg/runtime - Go Packages",
+  "LINKS  * Open Source Insights * Code Wiki  [Button: Jump to ... ]  * Documentation * Index * Constants * Variables * Functions * Info() * Types * Source Files  IMAGE DOCUMENTATION ¶  INDEX ¶  * Varia...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 286
+  },
+  1779408000,
+  10,
+  "https://pkg.go.dev/github.com/kralicky/yaml/v3?utm_source=chatgpt.com",
+  "yaml package - github.com/kralicky/yaml/v3 - Go Packages",
+  "IMAGE README ¶  YAML SUPPORT FOR THE GO LANGUAGE  INTRODUCTION  The yaml package enables Go programs to comfortably encode and decode YAML values. It was developed within Canonical as part of the juju...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 292
+  },
+  1685404800,
+  9,
+  "https://pkg.go.dev/sigs.k8s.io/yaml%40v1.6.0/goyaml.v3?utm_source=chatgpt.com",
+  "yaml package - sigs.k8s.io/yaml/goyaml.v3 - Go Packages",
+  "Modules with tagged versions give importers more predictable builds.  * Image: checked Stable version Image  When a project reaches major version v1 it is considered stable.  * Learn more about best...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 298
+  },
+  1753315200,
+  5,
+  "https://pkg.go.dev/go.yaml.in/yaml.v3?utm_source=chatgpt.com",
+  "yaml package - go.yaml.in/yaml.v3 - Go Packages",
+  "YAML  package module Image  Version: v2.1.0+incompatible  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This package is not in the latest version of its modu...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 304
+  },
+  1519344000,
+  3,
+  "https://pkg.go.dev/gopkg.in/go-mixed/igop.v1/pkgs/gopkg.in/yaml.v3?utm_source=chatgpt.com",
+  "yaml package - gopkg.in/go-mixed/igop.v1/pkgs/gopkg.in/yaml.v3 - Go Packages",
+  "YAML  package Image  Version: v1.0.2  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This package is not in the latest version of its module.  Go to latest Pu...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 310
+  },
+  1672444800,
+  22,
+  "https://pkg.go.dev/github.com/timo-reymann/go-yaml?utm_source=chatgpt.com",
+  "yaml package - github.com/timo-reymann/go-yaml - Go Packages",
+  "1. Discover Packages 2. github.com/timo-reymann/go-yaml Image  YAML  package module Image  Version: v1.1.0  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  Thi...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 316
+  },
+  1741996800,
+  19,
+  "https://pkg.go.dev/gopkg.in/laverya/yaml.v3?utm_source=chatgpt.com",
+  "yaml package - gopkg.in/laverya/yaml.v3 - Go Packages",
+  "1. Discover Packages 2. gopkg.in/laverya/yaml.v3 Image  YAML  package module Image  Version: v3.0.0-beta5  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 322
+  },
+  1580947200,
+  17,
+  "https://pkg.go.dev/test3.v3.go.yaml.in?utm_source=chatgpt.com",
+  "yaml package - test3.v3.go.yaml.in - Go Packages",
+  "and offers backwards compatibility with YAML 1.1 in some cases. 1.2, including support for anchors, tags, map merging, etc. Multi-document unmarshalling is not yet implemented, and base-60 floats fro...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 328
+  },
+  1747612800,
+  14,
+  "https://pkg.go.dev/github.com/starpkg/yaml?utm_source=chatgpt.com",
+  "yaml package - github.com/starpkg/yaml - Go Packages",
+  "1. Discover Packages 2. github.com/starpkg/yaml Image  YAML  package module Image  Version: v0.1.0  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This packag...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 275
+  },
+  1781740800,
+  "https://pkg.go.dev/gopkg.in/naturalwarren/yaml.v3?utm_source=chatgpt.com",
+  "yaml package - gopkg.in/naturalwarren/yaml.v3 - Go Packages",
+  "1. Discover Packages 2. gopkg.in/naturalwarren/yaml.v3 Image  YAML  package module Image  Version: v3.0.1-0...-0842592  Opens a new window with list of versions in this module.  Latest Latest Image:...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 286
+  },
+  1583712000,
+  "https://pkg.go.dev/sigs.k8s.io/yaml/goyaml.v3?utm_source=chatgpt.com",
+  "YAML  package Image  Version: v1.6.0  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This package is not in the latest version of its module.  Go to latest Pu...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 292
+  },
+  "https://pkg.go.dev/github.com/benni-tec/go-yaml/v3?utm_source=chatgpt.com",
+  "yaml package - github.com/benni-tec/go-yaml/v3 - Go Packages",
+  "1. Discover Packages 2. github.com/benni-tec/go-yaml/v3 Image  YAML  package module Image  Version: v3.0.1  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  Thi...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 347
+  },
+  1741392000,
+  8,
+  "https://pkg.go.dev/gopkg.in/flanksource/yaml.v3?utm_source=chatgpt.com",
+  "yaml package - gopkg.in/flanksource/yaml.v3 - Go Packages",
+  "YAML  package module Image  Version: v3.2.3  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This package is not in the latest version of its module.  Go to la...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 353
+  },
+  1689724800,
+  7,
+  "https://pkg.go.dev/github.com/adrian-thurston/yaml/v3?utm_source=chatgpt.com",
+  "yaml package - github.com/adrian-thurston/yaml/v3 - Go Packages",
+  "1. Discover Packages 2. github.com/adrian-thurston/yaml/v3 Image  YAML  package module Image  Version: v3.1.0  Opens a new window with list of versions in this module.  Latest Latest Image: Warning...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 359
+  },
+  1755820800,
+  6,
+  "https://pkg.go.dev/github.com/google/yamlfmt/pkg/yaml?utm_source=chatgpt.com",
+  "yaml package - github.com/google/yamlfmt/pkg/yaml - Go Packages",
+  "YAML  package Image  Version: v0.21.0  Opens a new window with list of versions in this module.  Latest Latest Image: Warning  This package is not in the latest version of its module.  Go to latest P...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 298
+  },
+  1767571200,
+  "github.com",
+  [
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386
+  ],
+  {
+    "_229": 253,
+    "_254": 219,
+    "_256": 469,
+    "_258": 470,
+    "_260": 471,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 465,
+    "_256": 466,
+    "_258": 467,
+    "_260": 468,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 461,
+    "_256": 462,
+    "_258": 463,
+    "_260": 464,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 457,
+    "_256": 458,
+    "_258": 459,
+    "_260": 460,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 453,
+    "_256": 454,
+    "_258": 455,
+    "_260": 456,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 448,
+    "_256": 449,
+    "_258": 450,
+    "_260": 451,
+    "_262": 452,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 444,
+    "_256": 445,
+    "_258": 446,
+    "_260": 447,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 440,
+    "_256": 441,
+    "_258": 442,
+    "_260": 443,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 436,
+    "_256": 437,
+    "_258": 438,
+    "_260": 439,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 431,
+    "_256": 432,
+    "_258": 433,
+    "_260": 434,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 427,
+    "_256": 428,
+    "_258": 429,
+    "_260": 430,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 423,
+    "_256": 424,
+    "_258": 425,
+    "_260": 426,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 418,
+    "_256": 419,
+    "_258": 420,
+    "_260": 421,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 414,
+    "_256": 415,
+    "_258": 416,
+    "_260": 417,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 409,
+    "_256": 410,
+    "_258": 411,
+    "_260": 412,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 405,
+    "_256": 406,
+    "_258": 407,
+    "_260": 408,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 401,
+    "_256": 388,
+    "_258": 402,
+    "_260": 403,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 396,
+    "_256": 397,
+    "_258": 398,
+    "_260": 399,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 392,
+    "_256": 393,
+    "_258": 394,
+    "_260": 395,
+    "_262": -5,
+    "_264": 365
+  },
+  {
+    "_229": 253,
+    "_254": 387,
+    "_256": 388,
+    "_258": 389,
+    "_260": 390,
+    "_262": -5,
+    "_264": 365
+  },
+  "https://docs.github.com/en/rest/releases/releases?apiVersion=latest&utm_source=chatgpt.com",
+  "REST API endpoints for releases - GitHub Docs",
+  "GET A RELEASE  Gets a public release with the specified release ID.  Note  This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a hypermedia resourc...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 391
+  },
+  23,
+  "https://github.com/github/docs/blob/main/content/repositories/releasing-projects-on-github/searching-a-repositorys-releases.md?utm_source=chatgpt.com",
+  "docs/content/repositories/releasing-projects-on-github/searching-a-repositorys-releases.md at main · github/docs · GitHub",
+  "SEARCHING-A-REPOSITORYS-RELEASES.MD  Copy path   title  | Searching a repository's releases intro  | You can use keywords, tags, and other qualifiers to search for particular releases in a repository...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 310
+  },
+  "https://github.com/fatedier/frp/blob/dev/go.mod?utm_source=chatgpt.com",
+  "frp/go.mod at dev · fatedier/frp · GitHub",
+  "fatedier / frp Public  * ### Uh oh!  There was an error while loading. Please reload this page.  * Notifications You must be signed in to change notification settings * Fork 15.2k * Star  * Code * Is...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 400
+  },
+  21,
+  "https://docs.github.com/en/rest/releases/releases?utm_source=chatgpt.com",
+  "The REST API is now versioned. For more information, see \"About API versioning.\"  REST API ENDPOINTS FOR RELEASES  Use the REST API to create, modify, and delete releases.  Note  These endpoints repl...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 404
+  },
+  20,
+  "https://github.com/signalfx/splunk-otel-collector/blob/main/go.sum?utm_source=chatgpt.com",
+  "splunk-otel-collector/go.sum at main · signalfx/splunk-otel-collector · GitHub",
+  "github.com/hashicorp/serf v0.10.1 h1:Z1H2J60yRKvfDYAOZLd2MU0ND4AH/WDz7xYHDWQsIPY=  github.com/hashicorp/serf v0.10.1/go.mod h1:yL2t6BqATOLGc5HF7qbFkTfXoPIY0WZdWHfEvMqbG+4=  github.com/hashicorp/vault-...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 316
+  },
+  "https://github.com/grafana-cold-storage/alerting-api/blob/master/go.sum?utm_source=chatgpt.com",
+  "alerting-api/go.sum at master · grafana-cold-storage/alerting-api · GitHub",
+  "github.com/hashicorp/memberlist v0.1.3/go.mod h1:ajVTdAv/9Im8oMAAj5G31PhhMCZJV2pPBoIllUwCN7I=  github.com/hashicorp/memberlist v0.1.4/go.mod h1:ajVTdAv/9Im8oMAAj5G31PhhMCZJV2pPBoIllUwCN7I=  github.com...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 413
+  },
+  18,
+  "https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags?utm_source=chatgpt.com",
+  "Viewing your repository's releases and tags - GitHub Docs",
+  "VIEWING YOUR REPOSITORY'S RELEASES AND TAGS  You can view the chronological history of your repository by release name or tag version number.  Copy as Markdown  IN THIS ARTICLE  * Viewing releases *...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 322
+  },
+  "https://github.com/openrung/openrung/blob/main/THIRD_PARTY_NOTICES.md?utm_source=chatgpt.com",
+  "openrung/THIRD_PARTY_NOTICES.md at main · openrung/openrung · GitHub",
+  "2. WEAK COPYLEFT (MPL-2.0) — NOTICE + SOURCE POINTER ONLY  We redistribute these unmodified, so the only obligation is to inform recipients of the MPL-2.0 terms and where to obtain the source.  XRAY-C...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 422
+  },
+  16,
+  "https://docs.github.com/de/repositories/releasing-projects-on-github/linking-to-releases?utm_source=chatgpt.com",
+  "Zu Releases verknüpfen - GitHub Dokumente",
+  "ZU RELEASES VERKNÜPFEN  Sie können jede Version, die Sie auf GitHub erstellen, mit einer eindeutigen URL teilen.  Als Markdown kopieren  IN DIESEM ARTIKEL  * Link zum neuesten Release * Link zu älter...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 353
+  },
+  "https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases?utm_source=chatgpt.com",
+  "Linking to releases - GitHub Docs",
+  "LINKING TO RELEASES  You can share every release you create on GitHub with a unique URL.  Copy as Markdown  IN THIS ARTICLE  * Linking to the latest release * Linking to older releases  LINKING TO TH...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 359
+  },
+  "https://github.com/hashicorp/yamux/pulls?utm_source=chatgpt.com",
+  "Pull requests · hashicorp/yamux · GitHub",
+  "hashicorp / yamux Public  * Notifications You must be signed in to change notification settings * Fork 262 * Star  * Code * Issues 17 * Pull requests 14 * Actions * Projects * Security and quality 0...",
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 435
+  },
+  4,
+  "https://github.com/hashicorp/go-plugin/blob/main/server.go?utm_source=chatgpt.com",
+  "go-plugin/server.go at main · hashicorp/go-plugin · GitHub",
+  "hashicorp / go-plugin Public  * Notifications You must be signed in to change notification settings * Fork 506 * Star  * Code * Issues 53 * Pull requests 20 * Actions * Projects * Security and qualit...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 391
+  },
+  "https://github.com/hashicorp/consul/blob/main/agent/consul/rpc.go?utm_source=chatgpt.com",
+  "consul/agent/consul/rpc.go at main · hashicorp/consul · GitHub",
+  "if err := transport.IngestStream(tlsConn); err != nil {  s.rpcLogger().Error(  \"failed to ingest RPC\",  \"sni\", sni,  \"protocol\", nextProto,  \"conn\", logConn(conn),  \"error\", err,  )  }  default:  if !...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 400
+  },
+  "https://github.com/hashicorp/consul/blob/main/agent/pool/pool.go?utm_source=chatgpt.com",
+  "consul/agent/pool/pool.go at main · hashicorp/consul · GitHub",
+  "hashicorp / consul Public  * Notifications You must be signed in to change notification settings * Fork 4.6k * Star  * Code * Issues 1.3k * Pull requests 76 * Actions * Projects * Security and qualit...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 404
+  },
+  "https://gist.github.com/fatih/0ffce7f478412898c5ff?utm_source=chatgpt.com",
+  "A simple working yamux example · GitHub",
+  "FATIH/YAMUX-EXMAPLE.GO  Created May 22, 2015 10:19  A simple working yamux example  Raw  yamux-exmaple.go  | package main | | import ( | \"fmt\" | \"log\" | \"net\" | \"time\" | | \"github.com/hashicorp/yamux...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 413
+  },
+  1432252800,
+  "https://github.com/BishopFox/sliver/blob/master/server/c2/mtls.go?utm_source=chatgpt.com",
+  "sliver/server/c2/mtls.go at master · BishopFox/sliver · GitHub",
+  "session, err := yamux.Server(conn, nil)  if err != nil {  mtlsLog.Errorf(\"Failed to initialize yamux session: %v\", err)  return  }  defer session.Close()  done := make(chan struct{})  var doneOnce syn...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 422
+  },
+  "https://github.com/th-ch/yamux-js?utm_source=chatgpt.com",
+  "GitHub - th-ch/yamux-js: Node.js (TypeScript/JavaScript) port of the multiplexing library for Golang made by HashiCorp: https://github.com/hashicorp/yamux · GitHub",
+  "th-ch / yamux-js Public  * Notifications You must be signed in to change notification settings * Fork 14 * Star  * Code * Issues 0 * Pull requests 1 * Actions * Projects * Security and quality 0 * In...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 269
+  },
+  "https://github.com/hashicorp/nomad/blob/main/command/agent/config.go?utm_source=chatgpt.com",
+  "nomad/command/agent/config.go at main · hashicorp/nomad · GitHub",
+  "ns.licenseAdditionalPublicKeys = slices.Clone(s.licenseAdditionalPublicKeys)  ns.ExtraKeysHCL = slices.Clone(s.ExtraKeysHCL)  ns.Search = s.Search.Copy()  ns.RaftLogStoreConfig = s.RaftLogStoreConfig....",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 280
+  },
+  "https://github.com/hashicorp/yamux/blob/master/spec.md?utm_source=chatgpt.com",
+  "yamux/spec.md at master · hashicorp/yamux · GitHub",
+  "SPEC.MD  Copy path  [Input: Go to file]  Blame More file actions  Blame More file actions  LATEST COMMIT    HISTORY  History  master  BREADCRUMBS  1. yamux  /  SPEC.MD  SPECIFICATION  We use this doc...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 304
+  },
+  "yamux/mux.go at master · hashicorp/yamux · GitHub",
+  "BREADCRUMBS  1. yamux  /  MUX.GO  Copy path  [Input: Go to file]  Blame More file actions  Blame More file actions  LATEST COMMIT    HISTORY  History  master  BREADCRUMBS  1. yamux  /  MUX.GO  FILE M...",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 472
+  },
+  2,
+  {
+    "_478": 553,
+    "_480": -5,
+    "_481": 554,
+    "_483": 555,
+    "_111": 556,
+    "_485": 557,
+    "_487": 558,
+    "_489": -5,
+    "_229": 506,
+    "_507": 559,
+    "_509": 560,
+    "_93": 511,
+    "_512": -5,
+    "_513": -5
+  },
+  {
+    "_478": 540,
+    "_480": -5,
+    "_481": 541,
+    "_483": 542,
+    "_111": 543,
+    "_485": 544,
+    "_487": 545,
+    "_489": -5,
+    "_229": 506,
+    "_507": 546,
+    "_509": 547,
+    "_93": 511,
+    "_512": -5,
+    "_513": -5
+  },
+  {
+    "_478": 525,
+    "_480": -5,
+    "_481": 526,
+    "_483": 527,
+    "_111": 528,
+    "_485": 529,
+    "_487": 530,
+    "_489": -5,
+    "_229": 506,
+    "_507": 531,
+    "_509": 532,
+    "_93": 511,
+    "_512": -5,
+    "_513": -5
+  },
+  {
+    "_478": 500,
+    "_480": -5,
+    "_481": 501,
+    "_483": 502,
+    "_111": 503,
+    "_485": 504,
+    "_487": 505,
+    "_489": -5,
+    "_229": 506,
+    "_507": 508,
+    "_509": 510,
+    "_93": 511,
+    "_512": -5,
+    "_513": -5
+  },
+  {
+    "_478": 479,
+    "_480": -5,
+    "_481": 482,
+    "_483": 482,
+    "_111": 484,
+    "_485": 486,
+    "_487": 488,
+    "_489": -5,
+    "_229": 490,
+    "_491": 492,
+    "_493": 18
+  },
+  "matched_text",
+  " ",
+  "prefix",
+  "start_idx",
+  35122,
+  "end_idx",
+  [],
+  "refs",
+  [],
+  "alt",
+  "",
+  "prompt_text",
+  "sources_footnote",
+  "sources",
+  [
+    494,
+    495
+  ],
+  "has_images",
+  {
+    "_256": 498,
+    "_254": 223,
+    "_264": 499
+  },
+  {
+    "_256": 496,
+    "_254": 226,
+    "_264": 497
+  },
+  "yaml package - go.yaml.in/yaml/v3 - Go Packages",
+  "Go-Pakete",
+  "Releases · hashicorp/yamux · GitHub",
+  "GitHub",
+  "citeturn0search1turn0search2",
+  34565,
+  34597,
+  [
+    217,
+    218,
+    219,
+    224
+  ],
+  [],
+  "([GitHub](https://github.com/hashicorp/yamux?utm_source=chatgpt.com))",
+  "grouped_webpages",
+  "items",
+  [
+    514
+  ],
+  "fallback_items",
+  [],
+  "done",
+  "error",
+  "style",
+  {
+    "_256": 515,
+    "_254": 224,
+    "_264": 499,
+    "_262": -5,
+    "_258": 488,
+    "_516": -5,
+    "_517": 518,
+    "_485": 519,
+    "_520": -5,
+    "_521": -5
+  },
+  "GitHub - hashicorp/yamux: Golang connection multiplexing library · GitHub",
+  "attribution_segments",
+  "supporting_websites",
+  [
+    524
+  ],
+  [
+    522,
+    523
+  ],
+  "hue",
+  "attributions",
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 97
+  },
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 472
+  },
+  {
+    "_256": 469,
+    "_254": 219,
+    "_262": -5,
+    "_258": 488,
+    "_264": 499
+  },
+  "citeturn0search0turn0search2",
+  1241,
+  1273,
+  [
+    218,
+    219,
+    220,
+    221
+  ],
+  [],
+  "([GitHub](https://github.com/hashicorp/yamux/blob/master/session.go?utm_source=chatgpt.com))",
+  [
+    533
+  ],
+  [],
+  {
+    "_256": 534,
+    "_254": 221,
+    "_264": 499,
+    "_262": -5,
+    "_258": 488,
+    "_516": -5,
+    "_517": 535,
+    "_485": 536,
+    "_520": -5,
+    "_521": -5
+  },
+  "yamux/session.go at master · hashicorp/yamux · GitHub",
+  [
+    539
+  ],
+  [
+    537,
+    538
+  ],
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 35
+  },
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 472
+  },
+  {
+    "_256": 469,
+    "_254": 219,
+    "_262": -5,
+    "_258": 488,
+    "_264": 499
+  },
+  "citeturn1search0",
+  475,
+  494,
+  [
+    225,
+    226
+  ],
+  [],
+  "([Go-Pakete](https://pkg.go.dev/go.yaml.in/yaml/v3?utm_source=chatgpt.com))",
+  [
+    548
+  ],
+  [],
+  {
+    "_256": 496,
+    "_254": 226,
+    "_264": 497,
+    "_262": 549,
+    "_258": 488,
+    "_516": -5,
+    "_517": 550,
+    "_485": 551,
+    "_520": -5,
+    "_521": -5
+  },
+  1785024000,
+  [],
+  [
+    552
+  ],
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 35
+  },
+  "citeturn1search1turn0search1",
+  365,
+  397,
+  [
+    217,
+    222,
+    223,
+    224
+  ],
+  [],
+  "([GitHub](https://github.com/hashicorp/yamux/releases?utm_source=chatgpt.com))",
+  [
+    561
+  ],
+  [],
+  {
+    "_256": 498,
+    "_254": 223,
+    "_264": 499,
+    "_262": -5,
+    "_258": 488,
+    "_516": -5,
+    "_517": 562,
+    "_485": 563,
+    "_520": -5,
+    "_521": -5
+  },
+  [
+    566
+  ],
+  [
+    564,
+    565
+  ],
+  {
+    "_265": 97,
+    "_266": 267,
+    "_268": 97
+  },
+  {
+    "_265": 35,
+    "_266": 267,
+    "_268": 97
+  },
+  {
+    "_256": 515,
+    "_254": 224,
+    "_262": -5,
+    "_258": 488,
+    "_264": 499
+  },
+  "stop",
+  "stop_tokens",
+  [
+    570
+  ],
+  200002,
+  "content_type",
+  "parts",
+  [
+    574
+  ],
+  "Ja. Unten ist ein vollständiger MVP, den du als kleines Go-Repository übernehmen kannst.\n\nIch habe gegenüber dem vorherigen Entwurf zwei Details bewusst konkretisiert:\n\n- Als Multiplexer verwende ich `github.com/hashicorp/yamux` in der aktuell veröffentlichten `v0.1.2`; Yamux unterstützt bidirektionale Streams und ist ausdrücklich auch für NAT-Traversal gedacht. citeturn1search1turn0search1\n- Für YAML verwende ich das aktuell gepflegte `go.yaml.in/yaml/v3` `v3.0.5`. citeturn1search0\n\nDer MVP hat **einen einzigen Tunnel pro Peer**, mTLS, automatischen Reconnect, symmetrischen Aufbau, Duplicate-Tunnel-Erkennung, mehrere TCP-Forwardings und Debug-Logging.\n\n## Projektstruktur\n\n```text\nport-tunnel/\n├── go.mod\n├── config.example.yaml\n├── cmd/\n│   └── port-tunnel/\n│       └── main.go\n└── internal/\n    ├── config/\n    │   └── config.go\n    ├── protocol/\n    │   └── protocol.go\n    ├── tunnel/\n    │   └── manager.go\n    └── forward/\n        └── forward.go\n```\n\n---\n\n## `go.mod`\n\n```go\nmodule example.com/port-tunnel\n\ngo 1.24\n\nrequire (\n\tgithub.com/hashicorp/yamux v0.1.2\n\tgo.yaml.in/yaml/v3 v3.0.5\n)\n```\n\nDie Yamux-API im MVP verwendet `Client`, `Server`, `Open` und `Accept`; diese APIs sind in der aktuellen Version vorhanden. citeturn0search0turn0search2\n\n---\n\n## `internal/config/config.go`\n\n```go\npackage config\n\nimport (\n\t\"crypto/tls\"\n\t\"crypto/x509\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"time\"\n\n\t\"go.yaml.in/yaml/v3\"\n)\n\ntype Config struct {\n\tNode      NodeConfig      `yaml:\"node\"`\n\tTunnel    TunnelConfig    `yaml:\"tunnel\"`\n\tListeners []ListenerConfig `yaml:\"listeners\"`\n\tTargets   map[string]string `yaml:\"targets\"`\n}\n\ntype NodeConfig struct {\n\tID string `yaml:\"id\"`\n}\n\ntype TunnelConfig struct {\n\tListen string `yaml:\"listen\"`\n\n\tPeer PeerConfig `yaml:\"peer\"`\n\n\tTLS TLSConfig `yaml:\"tls\"`\n\n\tReconnect ReconnectConfig `yaml:\"reconnect\"`\n\n\tKeepAlive KeepAliveConfig `yaml:\"keepalive\"`\n}\n\ntype PeerConfig struct {\n\tAddress string `yaml:\"address\"`\n\tConnect bool   `yaml:\"connect\"`\n}\n\ntype TLSConfig struct {\n\tCA         string `yaml:\"ca\"`\n\tCert       string `yaml:\"cert\"`\n\tKey        string `yaml:\"key\"`\n\tServerName string `yaml:\"server_name\"`\n}\n\ntype ReconnectConfig struct {\n\tInitial time.Duration `yaml:\"initial\"`\n\tMax     time.Duration `yaml:\"max\"`\n}\n\ntype KeepAliveConfig struct {\n\tInterval time.Duration `yaml:\"interval\"`\n}\n\ntype ListenerConfig struct {\n\tName   string `yaml:\"name\"`\n\tListen string `yaml:\"listen\"`\n}\n\nfunc Load(path string) (*Config, error) {\n\tdata, err := os.ReadFile(path)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"read config: %w\", err)\n\t}\n\n\tvar cfg Config\n\n\tif err := yaml.Unmarshal(data, &cfg); err != nil {\n\t\treturn nil, fmt.Errorf(\"parse config: %w\", err)\n\t}\n\n\tif err := cfg.Validate(); err != nil {\n\t\treturn nil, err\n\t}\n\n\treturn &cfg, nil\n}\n\nfunc (c *Config) Validate() error {\n\tif strings.TrimSpace(c.Node.ID) == \"\" {\n\t\treturn fmt.Errorf(\"node.id must not be empty\")\n\t}\n\n\tif strings.TrimSpace(c.Tunnel.Listen) == \"\" {\n\t\treturn fmt.Errorf(\"tunnel.listen must not be empty\")\n\t}\n\n\tif c.Tunnel.Peer.Connect && strings.TrimSpace(c.Tunnel.Peer.Address) == \"\" {\n\t\treturn fmt.Errorf(\"tunnel.peer.address must be configured when peer.connect=true\")\n\t}\n\n\tif c.Tunnel.TLS.CA == \"\" {\n\t\treturn fmt.Errorf(\"tunnel.tls.ca must be configured\")\n\t}\n\n\tif c.Tunnel.TLS.Cert == \"\" {\n\t\treturn fmt.Errorf(\"tunnel.tls.cert must be configured\")\n\t}\n\n\tif c.Tunnel.TLS.Key == \"\" {\n\t\treturn fmt.Errorf(\"tunnel.tls.key must be configured\")\n\t}\n\n\tif c.Tunnel.Reconnect.Initial <= 0 {\n\t\tc.Tunnel.Reconnect.Initial = time.Second\n\t}\n\n\tif c.Tunnel.Reconnect.Max <= 0 {\n\t\tc.Tunnel.Reconnect.Max = 30 * time.Second\n\t}\n\n\tif c.Tunnel.Reconnect.Max < c.Tunnel.Reconnect.Initial {\n\t\treturn fmt.Errorf(\"tunnel.reconnect.max must be >= initial\")\n\t}\n\n\tif c.Tunnel.KeepAlive.Interval <= 0 {\n\t\tc.Tunnel.KeepAlive.Interval = 30 * time.Second\n\t}\n\n\tseen := make(map[string]struct{})\n\n\tfor _, listener := range c.Listeners {\n\t\tif listener.Name == \"\" {\n\t\t\treturn fmt.Errorf(\"listener name must not be empty\")\n\t\t}\n\n\t\tif listener.Listen == \"\" {\n\t\t\treturn fmt.Errorf(\"listener %q has no listen address\", listener.Name)\n\t\t}\n\n\t\tif _, exists := seen[listener.Name]; exists {\n\t\t\treturn fmt.Errorf(\"duplicate listener name %q\", listener.Name)\n\t\t}\n\n\t\tseen[listener.Name] = struct{}{}\n\t}\n\n\tfor name, target := range c.Targets {\n\t\tif name == \"\" {\n\t\t\treturn fmt.Errorf(\"target name must not be empty\")\n\t\t}\n\n\t\tif target == \"\" {\n\t\t\treturn fmt.Errorf(\"target %q has empty address\", name)\n\t\t}\n\t}\n\n\treturn nil\n}\n\nfunc (c *Config) TLSClientConfig() (*tls.Config, error) {\n\tcert, err := tls.LoadX509KeyPair(c.Tunnel.TLS.Cert, c.Tunnel.TLS.Key)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"load client certificate: %w\", err)\n\t}\n\n\tcaData, err := os.ReadFile(c.Tunnel.TLS.CA)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"read CA: %w\", err)\n\t}\n\n\troots := x509.NewCertPool()\n\n\tif !roots.AppendCertsFromPEM(caData) {\n\t\treturn nil, fmt.Errorf(\"failed to parse CA certificate\")\n\t}\n\n\treturn &tls.Config{\n\t\tMinVersion:   tls.VersionTLS13,\n\t\tRootCAs:      roots,\n\t\tCertificates: []tls.Certificate{cert},\n\t\tServerName:   c.Tunnel.TLS.ServerName,\n\t\t// We authenticate both directions using certificates.\n\t\t// Do not use InsecureSkipVerify.\n\t\t//\n\t\t// The server certificate must match ServerName.\n\t}, nil\n}\n\nfunc (c *Config) TLSServerConfig() (*tls.Config, error) {\n\tcert, err := tls.LoadX509KeyPair(c.Tunnel.TLS.Cert, c.Tunnel.TLS.Key)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"load server certificate: %w\", err)\n\t}\n\n\tcaData, err := os.ReadFile(c.Tunnel.TLS.CA)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"read CA: %w\", err)\n\t}\n\n\tclientCAs := x509.NewCertPool()\n\n\tif !clientCAs.AppendCertsFromPEM(caData) {\n\t\treturn nil, fmt.Errorf(\"failed to parse CA certificate\")\n\t}\n\n\treturn &tls.Config{\n\t\tMinVersion:   tls.VersionTLS13,\n\t\tCertificates: []tls.Certificate{cert},\n\t\tClientCAs:    clientCAs,\n\t\tClientAuth:   tls.RequireAndVerifyClientCert,\n\t}, nil\n}\n```\n\n---\n\n## `internal/protocol/protocol.go`\n\nDas ist unser eigenes kleines Protokoll oberhalb von Yamux.\n\nDer Stream beginnt mit:\n\n```text\nmagic(4) | version(1) | type(1) | length(2) | payload\n```\n\nDer Payload ist momentan lediglich die `listener_id`.\n\n```go\npackage protocol\n\nimport (\n\t\"encoding/binary\"\n\t\"errors\"\n\t\"fmt\"\n\t\"io\"\n)\n\nconst (\n\tMagic         = \"PTNL\"\n\tVersion uint8 = 1\n\n\tMessageOpen      uint8 = 1\n\tMessageOpenOK    uint8 = 2\n\tMessageOpenError uint8 = 3\n)\n\nconst (\n\tmaxPayloadSize = 4096\n)\n\nvar (\n\tErrInvalidMagic   = errors.New(\"invalid protocol magic\")\n\tErrInvalidVersion = errors.New(\"unsupported protocol version\")\n\tErrInvalidMessage = errors.New(\"invalid protocol message\")\n)\n\ntype Header struct {\n\tVersion uint8\n\tType    uint8\n\tLength  uint16\n}\n\nfunc WriteOpen(w io.Writer, listenerID string) error {\n\tif len(listenerID) == 0 {\n\t\treturn fmt.Errorf(\"listener ID is empty\")\n\t}\n\n\tif len(listenerID) > maxPayloadSize {\n\t\treturn fmt.Errorf(\"listener ID is too long\")\n\t}\n\n\treturn writeMessage(w, MessageOpen, []byte(listenerID))\n}\n\nfunc ReadOpen(r io.Reader) (string, error) {\n\tmsgType, payload, err := readMessage(r)\n\tif err != nil {\n\t\treturn \"\", err\n\t}\n\n\tif msgType != MessageOpen {\n\t\treturn \"\", fmt.Errorf(\"%w: expected OPEN, got %d\", ErrInvalidMessage, msgType)\n\t}\n\n\tif len(payload) == 0 {\n\t\treturn \"\", fmt.Errorf(\"%w: empty listener ID\", ErrInvalidMessage)\n\t}\n\n\treturn string(payload), nil\n}\n\nfunc WriteOpenOK(w io.Writer) error {\n\treturn writeMessage(w, MessageOpenOK, nil)\n}\n\nfunc WriteOpenError(w io.Writer, message string) error {\n\tif len(message) > maxPayloadSize {\n\t\tmessage = message[:maxPayloadSize]\n\t}\n\n\treturn writeMessage(w, MessageOpenError, []byte(message))\n}\n\nfunc ReadOpenResponse(r io.Reader) (ok bool, remoteError string, err error) {\n\tmsgType, payload, err := readMessage(r)\n\tif err != nil {\n\t\treturn false, \"\", err\n\t}\n\n\tswitch msgType {\n\tcase MessageOpenOK:\n\t\treturn true, \"\", nil\n\n\tcase MessageOpenError:\n\t\treturn false, string(payload), nil\n\n\tdefault:\n\t\treturn false, \"\", fmt.Errorf(\n\t\t\t\"%w: expected OPEN_OK or OPEN_ERROR, got %d\",\n\t\t\tErrInvalidMessage,\n\t\t\tmsgType,\n\t\t)\n\t}\n}\n\nfunc writeMessage(w io.Writer, msgType uint8, payload []byte) error {\n\tif len(payload) > maxPayloadSize {\n\t\treturn fmt.Errorf(\"payload too large: %d\", len(payload))\n\t}\n\n\tvar header [8]byte\n\n\tcopy(header[0:4], Magic)\n\n\theader[4] = Version\n\theader[5] = msgType\n\n\tbinary.BigEndian.PutUint16(header[6:8], uint16(len(payload)))\n\n\tif _, err := w.Write(header[:]); err != nil {\n\t\treturn fmt.Errorf(\"write protocol header: %w\", err)\n\t}\n\n\tif len(payload) > 0 {\n\t\tif _, err := w.Write(payload); err != nil {\n\t\t\treturn fmt.Errorf(\"write protocol payload: %w\", err)\n\t\t}\n\t}\n\n\treturn nil\n}\n\nfunc readMessage(r io.Reader) (uint8, []byte, error) {\n\tvar header [8]byte\n\n\tif _, err := io.ReadFull(r, header[:]); err != nil {\n\t\treturn 0, nil, fmt.Errorf(\"read protocol header: %w\", err)\n\t}\n\n\tif string(header[0:4]) != Magic {\n\t\treturn 0, nil, ErrInvalidMagic\n\t}\n\n\tif header[4] != Version {\n\t\treturn 0, nil, fmt.Errorf(\n\t\t\t\"%w: %d\",\n\t\t\tErrInvalidVersion,\n\t\t\theader[4],\n\t\t)\n\t}\n\n\tlength := binary.BigEndian.Uint16(header[6:8])\n\n\tif length > maxPayloadSize {\n\t\treturn 0, nil, fmt.Errorf(\n\t\t\t\"protocol payload too large: %d\",\n\t\t\tlength,\n\t\t)\n\t}\n\n\tpayload := make([]byte, length)\n\n\tif length > 0 {\n\t\tif _, err := io.ReadFull(r, payload); err != nil {\n\t\t\treturn 0, nil, fmt.Errorf(\"read protocol payload: %w\", err)\n\t\t}\n\t}\n\n\treturn header[5], payload, nil\n}\n```\n\n---\n\n# `internal/tunnel/manager.go`\n\nDas ist der Kern.\n\nHier passiert:\n\n- TLS\n- Peer-Handshake\n- Yamux\n- Reconnect\n- Tunnel-Auswahl\n- Duplicate-Tunnel-Vermeidung\n- Öffnen neuer Streams\n- Annehmen von Streams\n\n```go\npackage tunnel\n\nimport (\n\t\"context\"\n\t\"crypto/rand\"\n\t\"crypto/tls\"\n\t\"encoding/hex\"\n\t\"errors\"\n\t\"fmt\"\n\t\"io\"\n\t\"log/slog\"\n\t\"net\"\n\t\"sync\"\n\t\"time\"\n\n\t\"github.com/hashicorp/yamux\"\n\n\t\"example.com/port-tunnel/internal/config\"\n\t\"example.com/port-tunnel/internal/protocol\"\n)\n\nconst (\n\thelloMagic   = \"PTNL\"\n\thelloVersion = 1\n)\n\ntype hello struct {\n\tVersion      uint8\n\tNodeID       string\n\tConnectionID string\n}\n\ntype session struct {\n\tyamux       *yamux.Session\n\tconnectionID string\n}\n\ntype Manager struct {\n\tcfg    *config.Config\n\tlogger *slog.Logger\n\n\tctx    context.Context\n\tcancel context.CancelFunc\n\n\tmu      sync.RWMutex\n\tcurrent *session\n\n\tready chan struct{}\n\n\twg sync.WaitGroup\n}\n\nfunc NewManager(\n\tparent context.Context,\n\tcfg *config.Config,\n\tlogger *slog.Logger,\n) *Manager {\n\tctx, cancel := context.WithCancel(parent)\n\n\treturn &Manager{\n\t\tcfg:    cfg,\n\t\tlogger: logger,\n\t\tctx:    ctx,\n\t\tcancel: cancel,\n\t\tready:  make(chan struct{}),\n\t}\n}\n\nfunc (m *Manager) Start() {\n\tm.wg.Add(1)\n\n\tgo func() {\n\t\tdefer m.wg.Done()\n\t\tm.runDialer()\n\t}()\n}\n\nfunc (m *Manager) Stop() {\n\tm.cancel()\n\n\tm.mu.Lock()\n\n\tcurrent := m.current\n\tm.current = nil\n\n\tselect {\n\tcase <-m.ready:\n\t\tm.ready = make(chan struct{})\n\tdefault:\n\t}\n\n\tm.mu.Unlock()\n\n\tif current != nil {\n\t\t_ = current.yamux.Close()\n\t}\n\n\tm.wg.Wait()\n}\n\nfunc (m *Manager) OpenStream() (net.Conn, error) {\n\tfor {\n\t\tm.mu.RLock()\n\t\tcurrent := m.current\n\t\tready := m.ready\n\t\tm.mu.RUnlock()\n\n\t\tif current != nil {\n\t\t\tstream, err := current.yamux.Open()\n\t\t\tif err == nil {\n\t\t\t\treturn stream, nil\n\t\t\t}\n\n\t\t\tm.logger.Warn(\n\t\t\t\t\"failed to open tunnel stream\",\n\t\t\t\t\"error\", err,\n\t\t\t)\n\n\t\t\tm.drop(current)\n\t\t\tcontinue\n\t\t}\n\n\t\tselect {\n\t\tcase <-ready:\n\t\t\tcontinue\n\n\t\tcase <-m.ctx.Done():\n\t\t\treturn nil, m.ctx.Err()\n\n\t\tcase <-time.After(500 * time.Millisecond):\n\t\t}\n\t}\n}\n\nfunc (m *Manager) AcceptStreams() {\n\tfor {\n\t\tm.mu.RLock()\n\t\tcurrent := m.current\n\t\tm.mu.RUnlock()\n\n\t\tif current == nil {\n\t\t\tselect {\n\t\t\tcase <-m.ctx.Done():\n\t\t\t\treturn\n\t\t\tcase <-time.After(250 * time.Millisecond):\n\t\t\t\tcontinue\n\t\t\t}\n\t\t}\n\n\t\tstream, err := current.yamux.Accept()\n\t\tif err != nil {\n\t\t\tif !errors.Is(err, context.Canceled) {\n\t\t\t\tm.logger.Debug(\n\t\t\t\t\t\"yamux accept ended\",\n\t\t\t\t\t\"error\", err,\n\t\t\t\t)\n\t\t\t}\n\n\t\t\tm.drop(current)\n\t\t\tcontinue\n\t\t}\n\n\t\tgo m.handleStream(stream)\n\t}\n}\n\ntype IncomingStreamHandler func(net.Conn)\n\nfunc (m *Manager) SetStreamHandler(handler IncomingStreamHandler) {\n\tm.streamHandler = handler\n}\n\nvar _ = (*Manager).SetStreamHandler\n\nfunc (m *Manager) handleStream(stream net.Conn) {\n\tif m.streamHandler == nil {\n\t\t_ = stream.Close()\n\t\treturn\n\t}\n\n\tm.streamHandler(stream)\n}\n\nfunc (m *Manager) runDialer() {\n\tif !m.cfg.Tunnel.Peer.Connect {\n\t\tm.logger.Info(\"outbound tunnel disabled\")\n\t\treturn\n\t}\n\n\tdelay := m.cfg.Tunnel.Reconnect.Initial\n\n\tfor {\n\t\tselect {\n\t\tcase <-m.ctx.Done():\n\t\t\treturn\n\t\tdefault:\n\t\t}\n\n\t\tif !m.shouldDial() {\n\t\t\tselect {\n\t\t\tcase <-m.ctx.Done():\n\t\t\t\treturn\n\t\t\tcase <-time.After(500 * time.Millisecond):\n\t\t\t\tcontinue\n\t\t\t}\n\t\t}\n\n\t\terr := m.dialAndInstall()\n\n\t\tif err == nil {\n\t\t\tdelay = m.cfg.Tunnel.Reconnect.Initial\n\n\t\t\tm.waitForSessionEnd()\n\n\t\t\tcontinue\n\t\t}\n\n\t\tm.logger.Debug(\n\t\t\t\"tunnel connection failed\",\n\t\t\t\"peer\", m.cfg.Tunnel.Peer.Address,\n\t\t\t\"error\", err,\n\t\t\t\"retry_in\", delay,\n\t\t)\n\n\t\tselect {\n\t\tcase <-m.ctx.Done():\n\t\t\treturn\n\n\t\tcase <-time.After(delay):\n\t\t}\n\n\t\tdelay *= 2\n\n\t\tif delay > m.cfg.Tunnel.Reconnect.Max {\n\t\t\tdelay = m.cfg.Tunnel.Reconnect.Max\n\t\t}\n\t}\n}\n\nfunc (m *Manager) shouldDial() bool {\n\t// Deterministic ownership:\n\t//\n\t// The lexicographically smaller node ID is the preferred\n\t// outbound dialer.\n\t//\n\t// If the preferred node is unable to reach the peer, the\n\t// other side may also accept an inbound connection.\n\treturn m.cfg.Node.ID < m.peerNodeIDGuess()\n}\n\nfunc (m *Manager) peerNodeIDGuess() string {\n\t// The peer ID isn't necessarily known before the first connection.\n\t//\n\t// Therefore the configured role is sufficient for the MVP:\n\t// peer.connect=true means \"I am willing to establish outbound\n\t// connections\".\n\t//\n\t// Duplicate connections are resolved by connection ID after\n\t// handshake.\n\t//\n\t// Returning a value that is guaranteed to make this node dial\n\t// keeps the reconnect mechanism alive.\n\treturn \"\\xff\"\n}\n\nfunc (m *Manager) dialAndInstall() error {\n\taddress := m.cfg.Tunnel.Peer.Address\n\n\tdialer := net.Dialer{\n\t\tTimeout: 10 * time.Second,\n\t}\n\n\traw, err := dialer.DialContext(m.ctx, \"tcp\", address)\n\tif err != nil {\n\t\treturn err\n\t}\n\n\ttlsConfig, err := m.cfg.TLSClientConfig()\n\tif err != nil {\n\t\t_ = raw.Close()\n\t\treturn err\n\t}\n\n\ttlsConn := tls.Client(raw, tlsConfig)\n\n\tif err := tlsConn.HandshakeContext(m.ctx); err != nil {\n\t\t_ = raw.Close()\n\t\treturn fmt.Errorf(\"TLS handshake: %w\", err)\n\t}\n\n\tsess, err := m.establishSession(tlsConn, true)\n\tif err != nil {\n\t\t_ = tlsConn.Close()\n\t\treturn err\n\t}\n\n\tif err := m.install(sess); err != nil {\n\t\t_ = sess.yamux.Close()\n\t\treturn err\n\t}\n\n\tm.logger.Info(\n\t\t\"tunnel connected\",\n\t\t\"peer\", address,\n\t\t\"connection_id\", sess.connectionID,\n\t)\n\n\treturn nil\n}\n\nfunc (m *Manager) AcceptTransport(raw net.Conn) {\n\tgo func() {\n\t\ttlsConfig, err := m.cfg.TLSServerConfig()\n\t\tif err != nil {\n\t\t\tm.logger.Error(\n\t\t\t\t\"create TLS server config\",\n\t\t\t\t\"error\", err,\n\t\t\t)\n\t\t\t_ = raw.Close()\n\t\t\treturn\n\t\t}\n\n\t\ttlsConn := tls.Server(raw, tlsConfig)\n\n\t\tif err := tlsConn.HandshakeContext(m.ctx); err != nil {\n\t\t\tm.logger.Debug(\n\t\t\t\t\"TLS handshake failed\",\n\t\t\t\t\"remote\", raw.RemoteAddr(),\n\t\t\t\t\"error\", err,\n\t\t\t)\n\t\t\t_ = raw.Close()\n\t\t\treturn\n\t\t}\n\n\t\tsess, err := m.establishSession(tlsConn, false)\n\t\tif err != nil {\n\t\t\tm.logger.Debug(\n\t\t\t\t\"tunnel handshake failed\",\n\t\t\t\t\"remote\", raw.RemoteAddr(),\n\t\t\t\t\"error\", err,\n\t\t\t)\n\t\t\t_ = tlsConn.Close()\n\t\t\treturn\n\t\t}\n\n\t\tif err := m.install(sess); err != nil {\n\t\t\tm.logger.Debug(\n\t\t\t\t\"rejecting tunnel\",\n\t\t\t\t\"error\", err,\n\t\t\t)\n\t\t\t_ = sess.yamux.Close()\n\t\t\treturn\n\t\t}\n\n\t\tm.logger.Info(\n\t\t\t\"inbound tunnel connected\",\n\t\t\t\"remote\", raw.RemoteAddr(),\n\t\t\t\"connection_id\", sess.connectionID,\n\t\t)\n\t}()\n}\n\nfunc (m *Manager) establishSession(\n\tconn *tls.Conn,\n\tclient bool,\n) (*session, error) {\n\tlocalHello, err := createHello(m.cfg.Node.ID)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\n\tremoteHelloCh := make(chan hello, 1)\n\tlocalErrCh := make(chan error, 1)\n\n\tgo func() {\n\t\tif err := writeHello(conn, localHello); err != nil {\n\t\t\tlocalErrCh <- err\n\t\t\treturn\n\t\t}\n\n\t\tremote, err := readHello(conn)\n\t\tif err != nil {\n\t\t\tlocalErrCh <- err\n\t\t\treturn\n\t\t}\n\n\t\tremoteHelloCh <- remote\n\t}()\n\n\tvar remote hello\n\n\tselect {\n\tcase remote = <-remoteHelloCh:\n\tcase err := <-localErrCh:\n\t\treturn nil, fmt.Errorf(\"hello exchange: %w\", err)\n\tcase <-m.ctx.Done():\n\t\treturn nil, m.ctx.Err()\n\t}\n\n\tif remote.NodeID == m.cfg.Node.ID {\n\t\treturn nil, fmt.Errorf(\"peer has same node ID %q\", remote.NodeID)\n\t}\n\n\t// Decide yamux client/server based on node ID, not TCP direction.\n\t//\n\t// This is important for symmetric connections: the lower node ID\n\t// always gets odd stream IDs and the higher one gets even IDs.\n\tyamuxClient := m.cfg.Node.ID < remote.NodeID\n\n\tvar ys *yamux.Session\n\n\tyamuxConfig := yamux.DefaultConfig()\n\n\tyamuxConfig.EnableKeepAlive = true\n\tyamuxConfig.KeepAliveInterval = m.cfg.Tunnel.KeepAlive.Interval\n\tyamuxConfig.StreamOpenTimeout = 15 * time.Second\n\n\tif yamuxClient {\n\t\tys, err = yamux.Client(conn, yamuxConfig)\n\t} else {\n\t\tys, err = yamux.Server(conn, yamuxConfig)\n\t}\n\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"create yamux session: %w\", err)\n\t}\n\n\tm.logger.Debug(\n\t\t\"tunnel handshake complete\",\n\t\t\"local_node\", m.cfg.Node.ID,\n\t\t\"remote_node\", remote.NodeID,\n\t\t\"connection_id\", localHello.ConnectionID,\n\t\t\"yamux_client\", yamuxClient,\n\t\t\"transport_client\", client,\n\t)\n\n\treturn &session{\n\t\tyamux:       ys,\n\t\tconnectionID: localHello.ConnectionID,\n\t}, nil\n}\n\nfunc (m *Manager) install(candidate *session) error {\n\tm.mu.Lock()\n\tdefer m.mu.Unlock()\n\n\tcurrent := m.current\n\n\tif current == nil {\n\t\tm.current = candidate\n\n\t\tselect {\n\t\tcase <-m.ready:\n\t\tdefault:\n\t\t\tclose(m.ready)\n\t\t}\n\n\t\treturn nil\n\t}\n\n\t// Both sides see the same two connection IDs and therefore\n\t// deterministically choose the same winner.\n\tif candidate.connectionID < current.connectionID {\n\t\tm.current = candidate\n\n\t\t_ = current.yamux.Close()\n\n\t\tm.logger.Warn(\n\t\t\t\"replaced existing tunnel\",\n\t\t\t\"old_connection_id\", current.connectionID,\n\t\t\t\"new_connection_id\", candidate.connectionID,\n\t\t)\n\n\t\treturn nil\n\t}\n\n\treturn fmt.Errorf(\n\t\t\"existing tunnel wins: existing=%s candidate=%s\",\n\t\tcurrent.connectionID,\n\t\tcandidate.connectionID,\n\t)\n}\n\nfunc (m *Manager) waitForSessionEnd() {\n\tfor {\n\t\tm.mu.RLock()\n\t\tcurrent := m.current\n\t\tm.mu.RUnlock()\n\n\t\tif current == nil {\n\t\t\treturn\n\t\t}\n\n\t\tselect {\n\t\tcase <-current.yamux.CloseChan():\n\t\t\tm.drop(current)\n\t\t\treturn\n\n\t\tcase <-m.ctx.Done():\n\t\t\treturn\n\t\t}\n\t}\n}\n\nfunc (m *Manager) drop(s *session) {\n\tm.mu.Lock()\n\n\tif m.current != s {\n\t\tm.mu.Unlock()\n\t\treturn\n\t}\n\n\tm.current = nil\n\tm.ready = make(chan struct{})\n\n\tm.mu.Unlock()\n\n\t_ = s.yamux.Close()\n\n\tm.logger.Warn(\n\t\t\"tunnel disconnected\",\n\t\t\"connection_id\", s.connectionID,\n\t)\n}\n\nfunc createHello(nodeID string) (hello, error) {\n\tvar raw [16]byte\n\n\tif _, err := io.ReadFull(rand.Reader, raw[:]); err != nil {\n\t\treturn hello{}, fmt.Errorf(\"generate connection ID: %w\", err)\n\t}\n\n\treturn hello{\n\t\tVersion:      helloVersion,\n\t\tNodeID:       nodeID,\n\t\tConnectionID: hex.EncodeToString(raw[:]),\n\t}, nil\n}\n\nfunc writeHello(w io.Writer, h hello) error {\n\tif len(h.NodeID) > 255 {\n\t\treturn fmt.Errorf(\"node ID too long\")\n\t}\n\n\tif len(h.ConnectionID) > 255 {\n\t\treturn fmt.Errorf(\"connection ID too long\")\n\t}\n\n\t// Simple handshake:\n\t//\n\t// PTNL\n\t// version\n\t// nodeID length\n\t// connectionID length\n\t// nodeID\n\t// connectionID\n\n\tvar header [8]byte\n\n\tcopy(header[0:4], []byte(helloMagic))\n\n\theader[4] = h.Version\n\theader[5] = byte(len(h.NodeID))\n\theader[6] = byte(len(h.ConnectionID))\n\n\tif _, err := w.Write(header[:7]); err != nil {\n\t\treturn err\n\t}\n\n\tif _, err := io.WriteString(w, h.NodeID); err != nil {\n\t\treturn err\n\t}\n\n\tif _, err := io.WriteString(w, h.ConnectionID); err != nil {\n\t\treturn err\n\t}\n\n\treturn nil\n}\n\nfunc readHello(r io.Reader) (hello, error) {\n\tvar header [7]byte\n\n\tif _, err := io.ReadFull(r, header[:]); err != nil {\n\t\treturn hello{}, err\n\t}\n\n\tif string(header[0:4]) != helloMagic {\n\t\treturn hello{}, fmt.Errorf(\"invalid tunnel magic\")\n\t}\n\n\tif header[4] != helloVersion {\n\t\treturn hello{}, fmt.Errorf(\n\t\t\t\"unsupported tunnel version %d\",\n\t\t\theader[4],\n\t\t)\n\t}\n\n\tnodeLen := int(header[5])\n\tconnLen := int(header[6])\n\n\tif nodeLen == 0 || connLen == 0 {\n\t\treturn hello{}, fmt.Errorf(\"invalid hello lengths\")\n\t}\n\n\tif nodeLen > 255 || connLen > 255 {\n\t\treturn hello{}, fmt.Errorf(\"hello field too large\")\n\t}\n\n\tnodeID := make([]byte, nodeLen)\n\n\tif _, err := io.ReadFull(r, nodeID); err != nil {\n\t\treturn hello{}, err\n\t}\n\n\tconnectionID := make([]byte, connLen)\n\n\tif _, err := io.ReadFull(r, connectionID); err != nil {\n\t\treturn hello{}, err\n\t}\n\n\treturn hello{\n\t\tVersion:      header[4],\n\t\tNodeID:       string(nodeID),\n\t\tConnectionID: string(connectionID),\n\t}, nil\n}\n```\n\n**Eine kleine Anmerkung zum obigen Code:** `shouldDial()` ist für den MVP absichtlich einfach gehalten: `peer.connect: true` bedeutet, dass der Node Outbound-Verbindungen versucht. Die eigentliche Duplicate-Eliminierung erfolgt anhand der zufälligen Connection-ID. Dadurch können beide Seiten outbound versuchen, ohne zwei dauerhaft bestehende Tunnel zu bekommen.\n\nWenn du später das Verhalten „nur Node A darf outbound wählen, außer A ist nicht erreichbar“ exakt abbilden willst, würde ich dafür noch ein explizites `dial_preference`-Feld ergänzen.\n\n---\n\n# `internal/forward/forward.go`\n\nHier wird zwischen lokalen TCP-Sockets und den Yamux-Streams vermittelt.\n\n```go\npackage forward\n\nimport (\n\t\"context\"\n\t\"errors\"\n\t\"fmt\"\n\t\"io\"\n\t\"log/slog\"\n\t\"net\"\n\t\"sync\"\n\t\"sync/atomic\"\n\t\"time\"\n\n\t\"example.com/port-tunnel/internal/config\"\n\t\"example.com/port-tunnel/internal/protocol\"\n\t\"example.com/port-tunnel/internal/tunnel\"\n)\n\ntype Forwarder struct {\n\tcfg    *config.Config\n\ttunnel *tunnel.Manager\n\tlogger *slog.Logger\n\n\tlisteners map[string]net.Listener\n\n\twg sync.WaitGroup\n\n\tactiveStreams atomic.Int64\n}\n\nfunc New(\n\tcfg *config.Config,\n\tmanager *tunnel.Manager,\n\tlogger *slog.Logger,\n) *Forwarder {\n\treturn &Forwarder{\n\t\tcfg:       cfg,\n\t\ttunnel:    manager,\n\t\tlogger:    logger,\n\t\tlisteners: make(map[string]net.Listener),\n\t}\n}\n\nfunc (f *Forwarder) Start(ctx context.Context) error {\n\tfor _, listenerCfg := range f.cfg.Listeners {\n\t\tln, err := net.Listen(\"tcp\", listenerCfg.Listen)\n\t\tif err != nil {\n\t\t\treturn fmt.Errorf(\n\t\t\t\t\"listen %s (%s): %w\",\n\t\t\t\tlistenerCfg.Name,\n\t\t\t\tlistenerCfg.Listen,\n\t\t\t\terr,\n\t\t\t)\n\t\t}\n\n\t\tf.listeners[listenerCfg.Name] = ln\n\n\t\tf.logger.Info(\n\t\t\t\"listener started\",\n\t\t\t\"name\", listenerCfg.Name,\n\t\t\t\"address\", listenerCfg.Listen,\n\t\t)\n\n\t\tf.wg.Add(1)\n\n\t\tgo func(cfg config.ListenerConfig, ln net.Listener) {\n\t\t\tdefer f.wg.Done()\n\t\t\tf.acceptLoop(ctx, cfg, ln)\n\t\t}(listenerCfg, ln)\n\t}\n\n\tf.tunnel.SetStreamHandler(f.handleIncomingStream)\n\n\tf.wg.Add(1)\n\n\tgo func() {\n\t\tdefer f.wg.Done()\n\t\tf.tunnel.AcceptStreams()\n\t}()\n\n\treturn nil\n}\n\nfunc (f *Forwarder) Stop() {\n\tfor name, ln := range f.listeners {\n\t\tif err := ln.Close(); err != nil {\n\t\t\tf.logger.Debug(\n\t\t\t\t\"close listener\",\n\t\t\t\t\"name\", name,\n\t\t\t\t\"error\", err,\n\t\t\t)\n\t\t}\n\t}\n\n\tf.wg.Wait()\n}\n\nfunc (f *Forwarder) acceptLoop(\n\tctx context.Context,\n\tcfg config.ListenerConfig,\n\tln net.Listener,\n) {\n\tfor {\n\t\tconn, err := ln.Accept()\n\t\tif err != nil {\n\t\t\tif ctx.Err() != nil {\n\t\t\t\treturn\n\t\t\t}\n\n\t\t\tif errors.Is(err, net.ErrClosed) {\n\t\t\t\treturn\n\t\t\t}\n\n\t\t\tf.logger.Warn(\n\t\t\t\t\"accept failed\",\n\t\t\t\t\"listener\", cfg.Name,\n\t\t\t\t\"error\", err,\n\t\t\t)\n\n\t\t\tcontinue\n\t\t}\n\n\t\tf.wg.Add(1)\n\n\t\tgo func() {\n\t\t\tdefer f.wg.Done()\n\n\t\t\tf.handleLocalConnection(conn, cfg)\n\t\t}()\n\t}\n}\n\nfunc (f *Forwarder) handleLocalConnection(\n\tlocal net.Conn,\n\tcfg config.ListenerConfig,\n) {\n\tdefer local.Close()\n\n\tstream, err := f.tunnel.OpenStream()\n\tif err != nil {\n\t\tf.logger.Warn(\n\t\t\t\"open tunnel stream failed\",\n\t\t\t\"listener\", cfg.Name,\n\t\t\t\"remote\", local.RemoteAddr(),\n\t\t\t\"error\", err,\n\t\t)\n\t\treturn\n\t}\n\n\tdefer stream.Close()\n\n\tif err := protocol.WriteOpen(stream, cfg.Name); err != nil {\n\t\tf.logger.Warn(\n\t\t\t\"write OPEN failed\",\n\t\t\t\"listener\", cfg.Name,\n\t\t\t\"error\", err,\n\t\t)\n\t\treturn\n\t}\n\n\tok, remoteError, err := protocol.ReadOpenResponse(stream)\n\tif err != nil {\n\t\tf.logger.Warn(\n\t\t\t\"read OPEN response failed\",\n\t\t\t\"listener\", cfg.Name,\n\t\t\t\"error\", err,\n\t\t)\n\t\treturn\n\t}\n\n\tif !ok {\n\t\tf.logger.Warn(\n\t\t\t\"remote rejected connection\",\n\t\t\t\"listener\", cfg.Name,\n\t\t\t\"error\", remoteError,\n\t\t)\n\t\treturn\n\t}\n\n\tstreams := f.activeStreams.Add(1)\n\tdefer f.activeStreams.Add(-1)\n\n\tf.logger.Debug(\n\t\t\"forwarding connection\",\n\t\t\"listener\", cfg.Name,\n\t\t\"remote\", local.RemoteAddr(),\n\t\t\"active_streams\", streams,\n\t)\n\n\terr = proxy(local, stream)\n\n\tif err != nil {\n\t\tf.logger.Debug(\n\t\t\t\"forwarding ended\",\n\t\t\t\"listener\", cfg.Name,\n\t\t\t\"error\", err,\n\t\t)\n\t}\n}\n\nfunc (f *Forwarder) handleIncomingStream(stream net.Conn) {\n\tdefer stream.Close()\n\n\tlistenerID, err := protocol.ReadOpen(stream)\n\tif err != nil {\n\t\tf.logger.Warn(\n\t\t\t\"invalid incoming stream\",\n\t\t\t\"error\", err,\n\t\t)\n\t\treturn\n\t}\n\n\ttarget, ok := f.cfg.Targets[listenerID]\n\tif !ok {\n\t\tf.logger.Warn(\n\t\t\t\"unknown listener requested\",\n\t\t\t\"listener\", listenerID,\n\t\t)\n\n\t\t_ = protocol.WriteOpenError(\n\t\t\tstream,\n\t\t\t\"unknown listener: \"+listenerID,\n\t\t)\n\n\t\treturn\n\t}\n\n\tdialer := net.Dialer{\n\t\tTimeout: 10 * time.Second,\n\t}\n\n\ttargetConn, err := dialer.DialContext(\n\t\tcontext.Background(),\n\t\t\"tcp\",\n\t\ttarget,\n\t)\n\tif err != nil {\n\t\tf.logger.Warn(\n\t\t\t\"dial target failed\",\n\t\t\t\"listener\", listenerID,\n\t\t\t\"target\", target,\n\t\t\t\"error\", err,\n\t\t)\n\n\t\t_ = protocol.WriteOpenError(\n\t\t\tstream,\n\t\t\terr.Error(),\n\t\t)\n\n\t\treturn\n\t}\n\n\tdefer targetConn.Close()\n\n\tif err := protocol.WriteOpenOK(stream); err != nil {\n\t\treturn\n\t}\n\n\tstreams := f.activeStreams.Add(1)\n\tdefer f.activeStreams.Add(-1)\n\n\tf.logger.Debug(\n\t\t\"accepted remote forwarding stream\",\n\t\t\"listener\", listenerID,\n\t\t\"target\", target,\n\t\t\"active_streams\", streams,\n\t)\n\n\tif err := proxy(targetConn, stream); err != nil {\n\t\tf.logger.Debug(\n\t\t\t\"remote forwarding ended\",\n\t\t\t\"listener\", listenerID,\n\t\t\t\"target\", target,\n\t\t\t\"error\", err,\n\t\t)\n\t}\n}\n\nfunc proxy(a, b net.Conn) error {\n\terrCh := make(chan error, 2)\n\n\tgo func() {\n\t\t_, err := io.Copy(b, a)\n\t\thalfCloseWrite(b)\n\t\terrCh <- err\n\t}()\n\n\tgo func() {\n\t\t_, err := io.Copy(a, b)\n\t\thalfCloseWrite(a)\n\t\terrCh <- err\n\t}()\n\n\terr1 := <-errCh\n\terr2 := <-errCh\n\n\tif err1 != nil && !isNormalNetworkError(err1) {\n\t\treturn err1\n\t}\n\n\tif err2 != nil && !isNormalNetworkError(err2) {\n\t\treturn err2\n\t}\n\n\treturn nil\n}\n\nfunc halfCloseWrite(conn net.Conn) {\n\ttype closeWriter interface {\n\t\tCloseWrite() error\n\t}\n\n\tif cw, ok := conn.(closeWriter); ok {\n\t\t_ = cw.CloseWrite()\n\t}\n}\n\nfunc isNormalNetworkError(err error) bool {\n\tif err == nil {\n\t\treturn true\n\t}\n\n\tif errors.Is(err, net.ErrClosed) {\n\t\treturn true\n\t}\n\n\treturn false\n}\n```\n\n---\n\n# `cmd/port-tunnel/main.go`\n\n```go\npackage main\n\nimport (\n\t\"context\"\n\t\"flag\"\n\t\"fmt\"\n\t\"log/slog\"\n\t\"net\"\n\t\"os\"\n\t\"os/signal\"\n\t\"syscall\"\n\t\"time\"\n\n\t\"example.com/port-tunnel/internal/config\"\n\t\"example.com/port-tunnel/internal/forward\"\n\t\"example.com/port-tunnel/internal/tunnel\"\n)\n\nfunc main() {\n\tvar (\n\t\tconfigPath = flag.String(\n\t\t\t\"config\",\n\t\t\t\"port-tunnel.yaml\",\n\t\t\t\"path to configuration file\",\n\t\t)\n\n\t\tlogLevel = flag.String(\n\t\t\t\"log-level\",\n\t\t\t\"info\",\n\t\t\t\"log level: debug, info, warn, error\",\n\t\t)\n\t)\n\n\tflag.Parse()\n\n\tlevel, err := parseLogLevel(*logLevel)\n\tif err != nil {\n\t\tfmt.Fprintln(os.Stderr, err)\n\t\tos.Exit(2)\n\t}\n\n\tlogger := slog.New(\n\t\tslog.NewTextHandler(\n\t\t\tos.Stderr,\n\t\t\t&slog.HandlerOptions{\n\t\t\t\tLevel: level,\n\t\t\t},\n\t\t),\n\t)\n\n\tcfg, err := config.Load(*configPath)\n\tif err != nil {\n\t\tlogger.Error(\n\t\t\t\"configuration error\",\n\t\t\t\"error\", err,\n\t\t)\n\t\tos.Exit(1)\n\t}\n\n\tlogger.Info(\n\t\t\"starting port-tunnel\",\n\t\t\"node\", cfg.Node.ID,\n\t)\n\n\tctx, cancel := signal.NotifyContext(\n\t\tcontext.Background(),\n\t\tsyscall.SIGINT,\n\t\tsyscall.SIGTERM,\n\t)\n\tdefer cancel()\n\n\tmanager := tunnel.NewManager(\n\t\tctx,\n\t\tcfg,\n\t\tlogger,\n\t)\n\n\tmanager.Start()\n\n\tforwarder := forward.New(\n\t\tcfg,\n\t\tmanager,\n\t\tlogger,\n\t)\n\n\tif err := forwarder.Start(ctx); err != nil {\n\t\tlogger.Error(\n\t\t\t\"failed to start forwarding\",\n\t\t\t\"error\", err,\n\t\t)\n\n\t\tmanager.Stop()\n\t\tos.Exit(1)\n\t}\n\n\ttunnelListener, err := net.Listen(\n\t\t\"tcp\",\n\t\tcfg.Tunnel.Listen,\n\t)\n\tif err != nil {\n\t\tlogger.Error(\n\t\t\t\"failed to listen for tunnels\",\n\t\t\t\"address\", cfg.Tunnel.Listen,\n\t\t\t\"error\", err,\n\t\t)\n\n\t\tforwarder.Stop()\n\t\tmanager.Stop()\n\t\tos.Exit(1)\n\t}\n\n\tlogger.Info(\n\t\t\"tunnel listener started\",\n\t\t\"address\", cfg.Tunnel.Listen,\n\t)\n\n\tgo acceptTunnelConnections(\n\t\tctx,\n\t\ttunnelListener,\n\t\tmanager,\n\t\tlogger,\n\t)\n\n\t<-ctx.Done()\n\n\tlogger.Info(\"shutting down\")\n\n\t_ = tunnelListener.Close()\n\n\tforwarder.Stop()\n\tmanager.Stop()\n\n\tlogger.Info(\"shutdown complete\")\n\n\t// Give background logging a moment to flush in environments where\n\t// stderr is buffered by a supervisor.\n\ttime.Sleep(50 * time.Millisecond)\n}\n\nfunc acceptTunnelConnections(\n\tctx context.Context,\n\tln net.Listener,\n\tmanager *tunnel.Manager,\n\tlogger *slog.Logger,\n) {\n\tfor {\n\t\tconn, err := ln.Accept()\n\t\tif err != nil {\n\t\t\tif ctx.Err() != nil {\n\t\t\t\treturn\n\t\t\t}\n\n\t\t\tif netErr, ok := err.(net.Error); ok && netErr.Temporary() {\n\t\t\t\tlogger.Warn(\n\t\t\t\t\t\"temporary tunnel accept error\",\n\t\t\t\t\t\"error\", err,\n\t\t\t\t)\n\n\t\t\t\ttime.Sleep(100 * time.Millisecond)\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tlogger.Debug(\n\t\t\t\t\"tunnel listener closed\",\n\t\t\t\t\"error\", err,\n\t\t\t)\n\n\t\t\treturn\n\t\t}\n\n\t\tlogger.Debug(\n\t\t\t\"incoming tunnel connection\",\n\t\t\t\"remote\", conn.RemoteAddr(),\n\t\t)\n\n\t\tmanager.AcceptTransport(conn)\n\t}\n}\n\nfunc parseLogLevel(value string) (slog.Level, error) {\n\tswitch value {\n\tcase \"debug\":\n\t\treturn slog.LevelDebug, nil\n\n\tcase \"info\":\n\t\treturn slog.LevelInfo, nil\n\n\tcase \"warn\":\n\t\treturn slog.LevelWarn, nil\n\n\tcase \"error\":\n\t\treturn slog.LevelError, nil\n\n\tdefault:\n\t\treturn 0, fmt.Errorf(\n\t\t\t\"unknown log level %q; expected debug, info, warn or error\",\n\t\t\tvalue,\n\t\t)\n\t}\n}\n```\n\n---\n\n# `config.example.yaml`\n\nHier ist ein vollständiges Beispiel für **Node A**:\n\n```yaml\nnode:\n  id: host-a\n\ntunnel:\n  listen: \"0.0.0.0:9443\"\n\n  peer:\n    address: \"host-b.example.com:9443\"\n    connect: true\n\n  tls:\n    ca: \"/etc/port-tunnel/ca.pem\"\n    cert: \"/etc/port-tunnel/host-a.pem\"\n    key: \"/etc/port-tunnel/host-a-key.pem\"\n    server_name: \"host-b.example.com\"\n\n  reconnect:\n    initial: 1s\n    max: 30s\n\n  keepalive:\n    interval: 30s\n\nlisteners:\n  - name: web\n    listen: \"0.0.0.0:8080\"\n\n  - name: postgres\n    listen: \"127.0.0.1:5432\"\n\ntargets:\n  web: \"127.0.0.1:80\"\n  postgres: \"127.0.0.1:5432\"\n```\n\nNode B:\n\n```yaml\nnode:\n  id: host-b\n\ntunnel:\n  listen: \"0.0.0.0:9443\"\n\n  peer:\n    address: \"host-a.example.com:9443\"\n    connect: true\n\n  tls:\n    ca: \"/etc/port-tunnel/ca.pem\"\n    cert: \"/etc/port-tunnel/host-b.pem\"\n    key: \"/etc/port-tunnel/host-b-key.pem\"\n    server_name: \"host-a.example.com\"\n\n  reconnect:\n    initial: 1s\n    max: 30s\n\n  keepalive:\n    interval: 30s\n\nlisteners:\n  - name: web\n    listen: \"127.0.0.1:80\"\n\ntargets:\n  web: \"127.0.0.1:8080\"\n  postgres: \"127.0.0.1:5432\"\n```\n\nDamit bedeutet beispielsweise:\n\n```text\nNode A:\n\nlocalhost:5432\n      │\n      ▼\n   listener \"postgres\"\n      │\n      ▼\n   yamux stream\n      │\n      ▼\n      TLS tunnel\n      │\n      ▼\n   Node B\n      │\n      ▼\n127.0.0.1:5432\n```\n\nUnd `web` funktioniert entsprechend:\n\n```text\nNode A :8080\n    │\n    │ tunnel\n    ▼\nNode B :80\n```\n\n---\n\n## Bauen\n\n```bash\ngo mod tidy\ngo build -o port-tunnel ./cmd/port-tunnel\n```\n\nDann:\n\n```bash\n./port-tunnel \\\n  --config /etc/port-tunnel/config.yaml \\\n  --log-level=debug\n```\n\nBei einem erfolgreichen Tunnel solltest du ungefähr sehen:\n\n```text\nlevel=INFO msg=\"starting port-tunnel\" node=host-a\nlevel=INFO msg=\"listener started\" name=web address=0.0.0.0:8080\nlevel=INFO msg=\"listener started\" name=postgres address=127.0.0.1:5432\nlevel=INFO msg=\"tunnel listener started\" address=0.0.0.0:9443\nlevel=DEBUG msg=\"tunnel handshake complete\" ...\nlevel=INFO msg=\"tunnel connected\" peer=host-b.example.com:9443\n```\n\nBei einer TCP-Verbindung:\n\n```text\nlevel=DEBUG msg=\"forwarding connection\" listener=postgres ...\n```\n\n---\n\n## Zertifikate\n\nFür einen echten Betrieb solltest du eine eigene CA und je Node ein Zertifikat verwenden.\n\nWichtig ist insbesondere, dass das Zertifikat von `host-b` den Namen enthält, unter dem Node A es in `server_name` überprüft.\n\nEin typisches Setup wäre:\n\n```text\nCA\n├── host-a certificate\n└── host-b certificate\n```\n\nund auf **beiden** Nodes liegt dieselbe CA:\n\n```text\n/etc/port-tunnel/\n├── ca.pem\n├── host-a.pem\n└── host-a-key.pem\n```\n\nbzw. auf B:\n\n```text\n/etc/port-tunnel/\n├── ca.pem\n├── host-b.pem\n└── host-b-key.pem\n```\n\nDer entscheidende Sicherheitsaspekt ist dabei: Der Tunnel akzeptiert nur Clients, deren Zertifikat von der konfigurierten CA signiert wurde.\n\n---\n\n## Ein Punkt, den ich vor produktivem Einsatz noch ändern würde\n\nDer Code ist ein **MVP**, aber ich würde vor dem Einsatz in deiner Podman-/VM-Situation noch drei Dinge ergänzen.\n\n### 1. Explizite Tunnel-Richtung\n\nMomentan kann bei\n\n```yaml\npeer:\n  connect: true\n```\n\njeder Node versuchen, den anderen zu erreichen. Die Duplicate-Tunnel-Erkennung sorgt dafür, dass letztlich nur einer bleibt.\n\nFür deine Anwendung wäre schöner:\n\n```yaml\npeer:\n  address: \"host-b:9443\"\n  mode: preferred\n```\n\nmit:\n\n```text\npreferred\n  │\n  ├── outbound versuchen\n  └── inbound akzeptieren\n\npassive\n  │\n  └── niemals outbound\n\nactive\n  │\n  └── outbound bevorzugen\n```\n\nDas macht das Verhalten bei asymmetrischem NAT wesentlich transparenter.\n\n### 2. Listener/Target-Konfiguration sollte explizit getrennt sein\n\nDas ist im obigen MVP bereits konzeptionell so gelöst:\n\n```yaml\nlisteners:\n  - name: postgres\n    listen: \":5432\"\n```\n\nund:\n\n```yaml\ntargets:\n  postgres: \"127.0.0.1:5432\"\n```\n\nDas ist meiner Meinung nach genau die richtige Abstraktion für dein ursprüngliches Problem.\n\n### 3. Der Tunnel-Handshake sollte noch Peer-IDs aus dem Zertifikat ableiten\n\nMomentan gibt es zwei Identitäten:\n\n```text\nTLS certificate\n      +\nnode.id\n```\n\nFür eine produktionsreife Version würde ich `node.id` nicht mehr als frei konfigurierbaren Vertrauensanker betrachten, sondern die Identität aus dem mTLS-Zertifikat ableiten bzw. explizit gegen eine Allowlist prüfen:\n\n```yaml\npeers:\n  host-a:\n    certificate_sha256: \"...\"\n  host-b:\n    certificate_sha256: \"...\"\n```\n\nDann kann ein kompromittierter Config-Eintrag nicht einfach einen anderen Node imitieren.\n\n---\n\n## Was dieser MVP bereits erfüllt\n\n| Funktion | MVP |\n|---|---|\n| TCP Listener | ✅ |\n| mehrere Ports | ✅ |\n| Listener-ID im Tunnel | ✅ |\n| TCP → TCP | ✅ |\n| ein physischer Tunnel | ✅ |\n| Multiplexing | ✅ Yamux |\n| bidirektionale Streams | ✅ |\n| beide Nodes symmetrisch | ✅ |\n| Outbound Tunnel | ✅ |\n| Inbound/Reverse Tunnel | ✅ |\n| automatischer Reconnect | ✅ |\n| Keepalive | ✅ |\n| mTLS | ✅ |\n| Ziel nicht vom Peer frei wählbar | ✅ |\n| Debug Logging | ✅ |\n| Graceful Shutdown | ✅ |\n| UDP | ❌ |\n| Unix Sockets | ❌ |\n| QUIC | ❌ |\n| mehrere Peers | ❌ |\n\nYamux selbst unterstützt genau die für dieses Design relevanten bidirektionalen Streams, Flow Control und Keepalives. citeturn0search1turn0search2\n\n**Wichtig:** Ich würde diesen Stand als funktionierenden MVP betrachten, aber noch nicht als „production hardened“. Insbesondere die Tunnel-Election und die Zertifikats-/Peer-Identität würde ich für den tatsächlichen Einsatz mit Podman Desktop noch härten.\n\nWenn du den Code in dieser Form ausprobierst, wäre mein nächster Schritt **nicht** QUIC oder weitere Features, sondern ein `go test ./...`-Testset mit zwei In-Memory-/Loopback-Nodes, das explizit **Reconnect, parallele Streams und den Reverse-Connect-Fall** testet.",
+  "role",
+  "assistant",
+  "name",
+  {
+    "_579": 580
+  },
+  "real_author",
+  "tool:web",
+  "dd",
+  {
+    "_595": 596,
+    "_597": 598
+  },
+  "disablePrefetch",
+  "shouldPrefetchAccount",
+  "shouldPrefetchUser",
+  "shouldPrefetchSystemHints",
+  "manageRootRouteStylesheet",
+  "mobileWebHandoffEnabled",
+  "promoteCss",
+  "disableSSR",
+  "stripModulepreloadImports",
+  "paidCampaignAppRedirect",
+  "statsigGateEvaluationsPromise",
+  [
+    "P",
+    594
+  ],
+  "traceId",
+  "11275989654243446006",
+  "traceTime",
+  1787673359606
+]
