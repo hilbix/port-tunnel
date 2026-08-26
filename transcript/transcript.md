@@ -3083,3 +3083,807 @@ Yamux selbst unterstützt genau die für dieses Design relevanten bidirektionale
 
 Wenn du den Code in dieser Form ausprobierst, wäre mein nächster Schritt **nicht** QUIC oder weitere Features, sondern ein `go test ./...`-Testset mit zwei In-Memory-/Loopback-Nodes, das explizit **Reconnect, parallele Streams und den Reverse-Connect-Fall** testet.
 
+---
+# Prompt 5
+
+> Ich bekommen beim build folgenden Fehler: internal/tunnel/manager.go:170:4: m.streamHandler undefined (type *Manager has no field or method streamHandler)
+
+---
+
+Der Fehler bedeutet schlicht: In `manager.go` wird bei Zeile 170 auf ein Feld bzw. eine Methode `streamHandler` von `Manager` zugegriffen, aber `Manager` definiert dieses nicht.
+
+Vermutlich steht dort etwas wie:
+
+```go
+m.streamHandler(...)
+```
+
+oder:
+
+```go
+m.streamHandler = ...
+```
+
+und deine Struktur sieht ungefähr so aus:
+
+```go
+type Manager struct {
+    // ...
+}
+```
+
+### Was du prüfen solltest
+
+1. **`Manager`-Definition suchen**
+   
+   Suche nach:
+
+```go
+type Manager struct {
+```
+
+   und prüfe, ob dort `streamHandler` vorhanden ist.
+
+2. **Nach `streamHandler` im gesamten Projekt suchen**
+
+```bash
+grep -R "streamHandler" -n .
+```
+
+   bzw. in VS Code: `Ctrl+Shift+F` → `streamHandler`.
+
+3. **Prüfen, ob die Datei mit der Definition ausgeschlossen wird**
+
+   Falls `streamHandler` eigentlich in einer anderen Datei definiert ist, können Build-Tags (`//go:build ...`) dafür sorgen, dass diese Datei beim aktuellen Build nicht kompiliert wird.
+
+4. **Prüfen, ob du unterschiedliche Versionen von Dateien hast**
+
+   Besonders verdächtig ist es, wenn `manager.go` aus einer neueren Version stammt, während die zugehörige `Manager`-Definition aus einer älteren Version stammt. Dann erwartet `manager.go` ein Feld, das in deiner aktuellen Version noch nicht existiert.
+
+Wenn du mir **`internal/tunnel/manager.go` (insbesondere etwa Zeilen 130–190) und die `type Manager struct { ... }`-Definition** zeigst, kann ich dir ziemlich genau sagen, was an Zeile 170 fehlt bzw. wie du es korrigierst.
+
+---
+# Prompt 6
+
+> ```
+> package tunnel
+>
+> import (
+> "context"
+> "crypto/rand"
+> "crypto/tls"
+> "encoding/hex"
+> "errors"
+> "fmt"
+> "io"
+> "log/slog"
+> "net"
+> "sync"
+> "time"
+>
+> "github.com/hashicorp/yamux"
+>
+> "example.com/port-tunnel/internal/config"
+> "example.com/port-tunnel/internal/protocol"
+> )
+>
+> const (
+> helloMagic   = "PTNL"
+> helloVersion = 1
+> )
+>
+> type hello struct {
+> Version      uint8
+> NodeID       string
+> ConnectionID string
+> }
+>
+> type session struct {
+> yamux       *yamux.Session
+> connectionID string
+> }
+>
+> type Manager struct {
+> cfg    *config.Config
+> logger *slog.Logger
+>
+> ctx    context.Context
+> cancel context.CancelFunc
+>
+> mu      sync.RWMutex
+> current *session
+>
+> ready chan struct{}
+>
+> wg sync.WaitGroup
+> }
+>
+> func NewManager(
+> parent context.Context,
+> cfg *config.Config,
+> logger *slog.Logger,
+> ) *Manager {
+> ctx, cancel := context.WithCancel(parent)
+>
+> return &Manager{
+> cfg:    cfg,
+> logger: logger,
+> ctx:    ctx,
+> cancel: cancel,
+> ready:  make(chan struct{}),
+> }
+> }
+>
+> func (m *Manager) Start() {
+> m.wg.Add(1)
+>
+> go func() {
+> defer m.wg.Done()
+> m.runDialer()
+> }()
+> }
+>
+> func (m *Manager) Stop() {
+> m.cancel()
+>
+> m.mu.Lock()
+>
+> current := m.current
+> m.current = nil
+>
+> select {
+> case <-m.ready:
+> m.ready = make(chan struct{})
+> default:
+> }
+>
+> m.mu.Unlock()
+>
+> if current != nil {
+> _ = current.yamux.Close()
+> }
+>
+> m.wg.Wait()
+> }
+>
+> func (m *Manager) OpenStream() (net.Conn, error) {
+> for {
+> m.mu.RLock()
+> current := m.current
+> ready := m.ready
+> m.mu.RUnlock()
+>
+> if current != nil {
+> stream, err := current.yamux.Open()
+> if err == nil {
+> return stream, nil
+> }
+>
+> m.logger.Warn(
+> "failed to open tunnel stream",
+> "error", err,
+> )
+>
+> m.drop(current)
+> continue
+> }
+>
+> select {
+> case <-ready:
+> continue
+>
+> case <-m.ctx.Done():
+> return nil, m.ctx.Err()
+>
+> case <-time.After(500 * time.Millisecond):
+> }
+> }
+> }
+>
+> func (m *Manager) AcceptStreams() {
+> for {
+> m.mu.RLock()
+> current := m.current
+> m.mu.RUnlock()
+>
+> if current == nil {
+> select {
+> case <-m.ctx.Done():
+> return
+> case <-time.After(250 * time.Millisecond):
+> continue
+> }
+> }
+>
+> stream, err := current.yamux.Accept()
+> if err != nil {
+> if !errors.Is(err, context.Canceled) {
+> m.logger.Debug(
+> "yamux accept ended",
+> "error", err,
+> )
+> }
+>
+> m.drop(current)
+> continue
+> }
+>
+> go m.handleStream(stream)
+> }
+> }
+>
+> type IncomingStreamHandler func(net.Conn)
+>
+> func (m *Manager) SetStreamHandler(handler IncomingStreamHandler) {
+> m.streamHandler = handler
+> }
+>
+> var _ = (*Manager).SetStreamHandler
+>
+> func (m *Manager) handleStream(stream net.Conn) {
+> if m.streamHandler == nil {
+> _ = stream.Close()
+> return
+> }
+>
+> m.streamHandler(stream)
+> }
+>
+> func (m *Manager) runDialer() {
+> if !m.cfg.Tunnel.Peer.Connect {
+> m.logger.Info("outbound tunnel disabled")
+> return
+> }
+>
+> delay := m.cfg.Tunnel.Reconnect.Initial
+>
+> for {
+> select {
+> case <-m.ctx.Done():
+> return
+> default:
+> }
+>
+> if !m.shouldDial() {
+> select {
+> case <-m.ctx.Done():
+> return
+> case <-time.After(500 * time.Millisecond):
+> continue
+> }
+> }
+>
+> err := m.dialAndInstall()
+>
+> if err == nil {
+> delay = m.cfg.Tunnel.Reconnect.Initial
+>
+> m.waitForSessionEnd()
+>
+> continue
+> }
+>
+> m.logger.Debug(
+> "tunnel connection failed",
+> "peer", m.cfg.Tunnel.Peer.Address,
+> "error", err,
+> "retry_in", delay,
+> )
+>
+> select {
+> case <-m.ctx.Done():
+> return
+>
+> case <-time.After(delay):
+> }
+>
+> delay *= 2
+>
+> if delay > m.cfg.Tunnel.Reconnect.Max {
+> delay = m.cfg.Tunnel.Reconnect.Max
+> }
+> }
+> }
+>
+> func (m *Manager) shouldDial() bool {
+> // Deterministic ownership:
+> //
+> // The lexicographically smaller node ID is the preferred
+> // outbound dialer.
+> //
+> // If the preferred node is unable to reach the peer, the
+> // other side may also accept an inbound connection.
+> return m.cfg.Node.ID < m.peerNodeIDGuess()
+> }
+>
+> func (m *Manager) peerNodeIDGuess() string {
+> // The peer ID isn't necessarily known before the first connection.
+> //
+> // Therefore the configured role is sufficient for the MVP:
+> // peer.connect=true means "I am willing to establish outbound
+> // connections".
+> //
+> // Duplicate connections are resolved by connection ID after
+> // handshake.
+> //
+> // Returning a value that is guaranteed to make this node dial
+> // keeps the reconnect mechanism alive.
+> return "\xff"
+> }
+>
+> func (m *Manager) dialAndInstall() error {
+> address := m.cfg.Tunnel.Peer.Address
+>
+> dialer := net.Dialer{
+> Timeout: 10 * time.Second,
+> }
+>
+> raw, err := dialer.DialContext(m.ctx, "tcp", address)
+> if err != nil {
+> return err
+> }
+>
+> tlsConfig, err := m.cfg.TLSClientConfig()
+> if err != nil {
+> _ = raw.Close()
+> return err
+> }
+>
+> tlsConn := tls.Client(raw, tlsConfig)
+>
+> if err := tlsConn.HandshakeContext(m.ctx); err != nil {
+> _ = raw.Close()
+> return fmt.Errorf("TLS handshake: %w", err)
+> }
+>
+> sess, err := m.establishSession(tlsConn, true)
+> if err != nil {
+> _ = tlsConn.Close()
+> return err
+> }
+>
+> if err := m.install(sess); err != nil {
+> _ = sess.yamux.Close()
+> return err
+> }
+>
+> m.logger.Info(
+> "tunnel connected",
+> "peer", address,
+> "connection_id", sess.connectionID,
+> )
+>
+> return nil
+> }
+>
+> func (m *Manager) AcceptTransport(raw net.Conn) {
+> go func() {
+> tlsConfig, err := m.cfg.TLSServerConfig()
+> if err != nil {
+> m.logger.Error(
+> "create TLS server config",
+> "error", err,
+> )
+> _ = raw.Close()
+> return
+> }
+>
+> tlsConn := tls.Server(raw, tlsConfig)
+>
+> if err := tlsConn.HandshakeContext(m.ctx); err != nil {
+> m.logger.Debug(
+> "TLS handshake failed",
+> "remote", raw.RemoteAddr(),
+> "error", err,
+> )
+> _ = raw.Close()
+> return
+> }
+>
+> sess, err := m.establishSession(tlsConn, false)
+> if err != nil {
+> m.logger.Debug(
+> "tunnel handshake failed",
+> "remote", raw.RemoteAddr(),
+> "error", err,
+> )
+> _ = tlsConn.Close()
+> return
+> }
+>
+> if err := m.install(sess); err != nil {
+> m.logger.Debug(
+> "rejecting tunnel",
+> "error", err,
+> )
+> _ = sess.yamux.Close()
+> return
+> }
+>
+> m.logger.Info(
+> "inbound tunnel connected",
+> "remote", raw.RemoteAddr(),
+> "connection_id", sess.connectionID,
+> )
+> }()
+> }
+>
+> func (m *Manager) establishSession(
+> conn *tls.Conn,
+> client bool,
+> ) (*session, error) {
+> localHello, err := createHello(m.cfg.Node.ID)
+> if err != nil {
+> return nil, err
+> }
+>
+> remoteHelloCh := make(chan hello, 1)
+> localErrCh := make(chan error, 1)
+>
+> go func() {
+> if err := writeHello(conn, localHello); err != nil {
+> localErrCh <- err
+> return
+> }
+>
+> remote, err := readHello(conn)
+> if err != nil {
+> localErrCh <- err
+> return
+> }
+>
+> remoteHelloCh <- remote
+> }()
+>
+> var remote hello
+>
+> select {
+> case remote = <-remoteHelloCh:
+> case err := <-localErrCh:
+> return nil, fmt.Errorf("hello exchange: %w", err)
+> case <-m.ctx.Done():
+> return nil, m.ctx.Err()
+> }
+>
+> if remote.NodeID == m.cfg.Node.ID {
+> return nil, fmt.Errorf("peer has same node ID %q", remote.NodeID)
+> }
+>
+> // Decide yamux client/server based on node ID, not TCP direction.
+> //
+> // This is important for symmetric connections: the lower node ID
+> // always gets odd stream IDs and the higher one gets even IDs.
+> yamuxClient := m.cfg.Node.ID < remote.NodeID
+>
+> var ys *yamux.Session
+>
+> yamuxConfig := yamux.DefaultConfig()
+>
+> yamuxConfig.EnableKeepAlive = true
+> yamuxConfig.KeepAliveInterval = m.cfg.Tunnel.KeepAlive.Interval
+> yamuxConfig.StreamOpenTimeout = 15 * time.Second
+>
+> if yamuxClient {
+> ys, err = yamux.Client(conn, yamuxConfig)
+> } else {
+> ys, err = yamux.Server(conn, yamuxConfig)
+> }
+>
+> if err != nil {
+> return nil, fmt.Errorf("create yamux session: %w", err)
+> }
+>
+> m.logger.Debug(
+> "tunnel handshake complete",
+> "local_node", m.cfg.Node.ID,
+> "remote_node", remote.NodeID,
+> "connection_id", localHello.ConnectionID,
+> "yamux_client", yamuxClient,
+> "transport_client", client,
+> )
+>
+> return &session{
+> yamux:       ys,
+> connectionID: localHello.ConnectionID,
+> }, nil
+> }
+>
+> func (m *Manager) install(candidate *session) error {
+> m.mu.Lock()
+> defer m.mu.Unlock()
+>
+> current := m.current
+>
+> if current == nil {
+> m.current = candidate
+>
+> select {
+> case <-m.ready:
+> default:
+> close(m.ready)
+> }
+>
+> return nil
+> }
+>
+> // Both sides see the same two connection IDs and therefore
+> // deterministically choose the same winner.
+> if candidate.connectionID < current.connectionID {
+> m.current = candidate
+>
+> _ = current.yamux.Close()
+>
+> m.logger.Warn(
+> "replaced existing tunnel",
+> "old_connection_id", current.connectionID,
+> "new_connection_id", candidate.connectionID,
+> )
+>
+> return nil
+> }
+>
+> return fmt.Errorf(
+> "existing tunnel wins: existing=%s candidate=%s",
+> current.connectionID,
+> candidate.connectionID,
+> )
+> }
+>
+> func (m *Manager) waitForSessionEnd() {
+> for {
+> m.mu.RLock()
+> current := m.current
+> m.mu.RUnlock()
+>
+> if current == nil {
+> return
+> }
+>
+> select {
+> case <-current.yamux.CloseChan():
+> m.drop(current)
+> return
+>
+> case <-m.ctx.Done():
+> return
+> }
+> }
+> }
+>
+> func (m *Manager) drop(s *session) {
+> m.mu.Lock()
+>
+> if m.current != s {
+> m.mu.Unlock()
+> return
+> }
+>
+> m.current = nil
+> m.ready = make(chan struct{})
+>
+> m.mu.Unlock()
+>
+> _ = s.yamux.Close()
+>
+> m.logger.Warn(
+> "tunnel disconnected",
+> "connection_id", s.connectionID,
+> )
+> }
+>
+> func createHello(nodeID string) (hello, error) {
+> var raw [16]byte
+>
+> if _, err := io.ReadFull(rand.Reader, raw[:]); err != nil {
+> return hello{}, fmt.Errorf("generate connection ID: %w", err)
+> }
+>
+> return hello{
+> Version:      helloVersion,
+> NodeID:       nodeID,
+> ConnectionID: hex.EncodeToString(raw[:]),
+> }, nil
+> }
+>
+> func writeHello(w io.Writer, h hello) error {
+> if len(h.NodeID) > 255 {
+> return fmt.Errorf("node ID too long")
+> }
+>
+> if len(h.ConnectionID) > 255 {
+> return fmt.Errorf("connection ID too long")
+> }
+>
+> // Simple handshake:
+> //
+> // PTNL
+> // version
+> // nodeID length
+> // connectionID length
+> // nodeID
+> // connectionID
+>
+> var header [8]byte
+>
+> copy(header[0:4], []byte(helloMagic))
+>
+> header[4] = h.Version
+> header[5] = byte(len(h.NodeID))
+> header[6] = byte(len(h.ConnectionID))
+>
+> if _, err := w.Write(header[:7]); err != nil {
+> return err
+> }
+>
+> if _, err := io.WriteString(w, h.NodeID); err != nil {
+> return err
+> }
+>
+> if _, err := io.WriteString(w, h.ConnectionID); err != nil {
+> return err
+> }
+>
+> return nil
+> }
+>
+> func readHello(r io.Reader) (hello, error) {
+> var header [7]byte
+>
+> if _, err := io.ReadFull(r, header[:]); err != nil {
+> return hello{}, err
+> }
+>
+> if string(header[0:4]) != helloMagic {
+> return hello{}, fmt.Errorf("invalid tunnel magic")
+> }
+>
+> if header[4] != helloVersion {
+> return hello{}, fmt.Errorf(
+> "unsupported tunnel version %d",
+> header[4],
+> )
+> }
+>
+> nodeLen := int(header[5])
+> connLen := int(header[6])
+>
+> if nodeLen == 0 || connLen == 0 {
+> return hello{}, fmt.Errorf("invalid hello lengths")
+> }
+>
+> if nodeLen > 255 || connLen > 255 {
+> return hello{}, fmt.Errorf("hello field too large")
+> }
+>
+> nodeID := make([]byte, nodeLen)
+>
+> if _, err := io.ReadFull(r, nodeID); err != nil {
+> return hello{}, err
+> }
+>
+> connectionID := make([]byte, connLen)
+>
+> if _, err := io.ReadFull(r, connectionID); err != nil {
+> return hello{}, err
+> }
+>
+> return hello{
+> Version:      header[4],
+> NodeID:       string(nodeID),
+> ConnectionID: string(connectionID),
+> }, nil
+> }
+> ```
+
+---
+
+Ja, damit ist der Fehler eindeutig. Dein Code enthält bereits:
+
+```go
+func (m *Manager) SetStreamHandler(handler IncomingStreamHandler) {
+	m.streamHandler = handler
+}
+```
+
+und später:
+
+```go
+func (m *Manager) handleStream(stream net.Conn) {
+	if m.streamHandler == nil {
+		_ = stream.Close()
+		return
+	}
+
+	m.streamHandler(stream)
+}
+```
+
+Aber in `Manager` fehlt das entsprechende Feld.
+
+### Korrektur
+
+Ergänze in deiner `Manager`-Struktur:
+
+```go
+type Manager struct {
+	cfg    *config.Config
+	logger *slog.Logger
+
+	ctx    context.Context
+	cancel context.CancelFunc
+
+	mu      sync.RWMutex
+	current *session
+
+	streamHandler IncomingStreamHandler
+
+	ready chan struct{}
+
+	wg sync.WaitGroup
+}
+```
+
+Damit sollte der konkrete Build-Fehler verschwinden.
+
+### Noch besser: Thread-Safety
+
+Da `SetStreamHandler()` und `handleStream()` potentiell aus unterschiedlichen Goroutines aufgerufen werden, würde ich den Handler ebenfalls über deinen Mutex schützen. Zum Beispiel:
+
+```go
+func (m *Manager) SetStreamHandler(handler IncomingStreamHandler) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+
+	m.streamHandler = handler
+}
+
+func (m *Manager) handleStream(stream net.Conn) {
+	m.mu.RLock()
+	handler := m.streamHandler
+	m.mu.RUnlock()
+
+	if handler == nil {
+		_ = stream.Close()
+		return
+	}
+
+	handler(stream)
+}
+```
+
+Das ist insbesondere sinnvoll, weil `AcceptStreams()` für jeden Stream eine eigene Goroutine startet:
+
+```go
+go m.handleStream(stream)
+```
+
+### Allerdings sehe ich noch einen weiteren Bug
+
+In `AcceptStreams()` hast du:
+
+```go
+if current == nil {
+	select {
+	case <-m.ctx.Done():
+		return
+	case <-time.After(250 * time.Millisecond):
+		continue
+	}
+}
+
+stream, err := current.yamux.Accept()
+```
+
+Wenn `current == nil` ist, machst du nach dem `if` trotzdem mit `current.yamux.Accept()` weiter. Zwar führt der `continue` im `time.After`-Fall dazu, dass es normalerweise nicht passiert, aber beim `m.ctx.Done()` wird die Funktion beendet. Das ist also hier tatsächlich okay.
+
+**Der eigentliche Build-Fehler ist ausschließlich das fehlende Feld `streamHandler`.**
+
+Ich würde außerdem `go vet` und den Race Detector laufen lassen:
+
+```bash
+go test ./...
+go test -race ./...
+```
+
+Wenn du möchtest, kann ich deinen kompletten `manager.go` auch einmal auf **weitere Concurrency-/Yamux-/Reconnect-Probleme** prüfen. Da sehe ich nämlich noch ein paar Stellen, die im laufenden Betrieb interessant werden könnten.
+
