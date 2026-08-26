@@ -44,6 +44,7 @@ extract()
 }
 
 isopen=false
+iscode=
 nr=0
 open()
 {
@@ -58,6 +59,10 @@ close()
   printf -- '---\n\n'
   isopen=false
 }
+mdcode()
+{
+  [ -z "$iscode" ] && iscode='>' || iscode=''
+}
 
 convert()
 {
@@ -70,8 +75,10 @@ convert()
 		extract "${line##*/}"
 		continue
 		;;
-	('')	echo
+	('')	echo "$iscode"
 		continue
+		;;
+	('```')	mdcode
 		;;
 	esac
 	open
