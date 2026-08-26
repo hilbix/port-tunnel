@@ -23,7 +23,7 @@ tunnel:
 
 listeners:
   - name: web
-    listen: "0.0.0.0:8080"
+    listen: "0.0.0.0:8282"
 
   - name: postgres
     listen: "127.0.0.1:5432"
