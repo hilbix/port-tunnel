@@ -1,0 +1,33 @@
+node:
+  id: host-a
+
+tunnel:
+  listen: "0.0.0.0:9443"
+
+  peer:
+    address: "host-b.example.com:9443"
+    connect: true
+
+  tls:
+    ca: "/etc/port-tunnel/ca.pem"
+    cert: "/etc/port-tunnel/host-a.pem"
+    key: "/etc/port-tunnel/host-a-key.pem"
+    server_name: "host-b.example.com"
+
+  reconnect:
+    initial: 1s
+    max: 30s
+
+  keepalive:
+    interval: 30s
+
+listeners:
+  - name: web
+    listen: "0.0.0.0:8080"
+
+  - name: postgres
+    listen: "127.0.0.1:5432"
+
+targets:
+  web: "127.0.0.1:80"
+  postgres: "127.0.0.1:5432"
