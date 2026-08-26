@@ -16,7 +16,7 @@ import (
 	"github.com/hashicorp/yamux"
 
 	"github.com/hilbix/port-tunnel/internal/config"
-	"github.com/hilbix/port-tunnel/internal/protocol"
+//	"github.com/hilbix/port-tunnel/internal/protocol"
 )
 
 const (
@@ -44,6 +44,8 @@ type Manager struct {
 
 	mu      sync.RWMutex
 	current *session
+
+	streamHandler IncomingStreamHandler
 
 	ready chan struct{}
 
@@ -167,18 +169,25 @@ func (m *Manager) AcceptStreams() {
 type IncomingStreamHandler func(net.Conn)
 
 func (m *Manager) SetStreamHandler(handler IncomingStreamHandler) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+
 	m.streamHandler = handler
 }
 
 var _ = (*Manager).SetStreamHandler
 
 func (m *Manager) handleStream(stream net.Conn) {
-	if m.streamHandler == nil {
+	m.mu.RLock()
+	handler := m.streamHandler
+	m.mu.RUnlock()
+
+	if handler == nil {
 		_ = stream.Close()
 		return
 	}
 
-	m.streamHandler(stream)
+	handler(stream)
 }
 
 func (m *Manager) runDialer() {
