@@ -1,0 +1,17 @@
+
+Ich brauche ein automatisiertes port-forwarding-Tool, das folgendes leistet:  Es lauscht auf einer Reihe angegebener Ports auf eingehende TCP-Verbindungen.  Wenn etwas hereinkommt, dann nimmt es die Verbindung an und leitet sie an eine Gegenstelle über einen Tunnel weiter.  Dieser Tunnel kann automatisch aufgebaut werden sofern eine direkte Verbindung existiert oder muss von außen kommend aufgebaut werden.  Die Gegenstelle ist dabei idealerweise dasselbe Tool (es funktioniert symmetrisch).  Die Gegenstelle erkennt über die mitgeschickten Metadaten, über welchen Port die Daten hereinkamen, und baut entsprechend eine TCP-Verbindung zu einem passenden Ziel auf.  Wichtig ist, dass alles über einen einzigen Tunnel gemultiplext wird.
+
+https://chatgpt.com/s/t_6a8db27448f881918bd6ba680378ce4f
+
+ja, bitte entwerfe das port-tunnel-tool in go!
+
+https://chatgpt.com/s/t_6a8db31260ec8191b89f7cbdb08fd697
+
+sieht für mich sehr gut aus.  kannst Du es für mich programmieren?
+
+https://chatgpt.com/s/t_6a8db34b59f881919bf851ce815fc94c
+
+bitte gib mir den MVP-Quellcode
+
+https://chatgpt.com/s/t_6a8da87879948191aa256c4b354a2bc1
+
